@@ -1,0 +1,20 @@
+
+public class Adder {
+
+	public static void main(String[] args) {
+		int sum = 100 + 500;
+		System.out.println("Adder: " + sum);
+
+	}
+
+}
+/*
+Spring (2008년경 탄 2013년 11월 중순경 채택 => 전자정부 프레임워크로 사용하기 시작)
+-핵심 계층
+ 1)프레젠 테이션 계층 : SpringFramework
+  -사용자 인터페이스 역할
+ 2)제어 계층 : 프리젠테이션 계층과 비지니스 로직 계층을 분리하기 위하여 컨트롤러를 제공한다.
+ 3)비지니스 로직 계층 : 
+ 4)퍼시턴스 계층
+ 5)도메인 모델 계층
+*/

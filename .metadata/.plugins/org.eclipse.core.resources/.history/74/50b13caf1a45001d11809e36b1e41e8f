@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- 의존성 주입(Dependency Injection) -->
+<!-- single mode, prototype -->
+       <bean class="kr.co.ezen.beans.TestBean"></bean>
+       <bean id="tb1" class="kr.co.ezen.beans.TestBean"></bean>
+	   <bean id="tb2" class="kr.co.ezen.beans.TestBean"></bean>
+</beans>

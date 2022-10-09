@@ -1,0 +1,11 @@
+package kr.co.ezen.beans3;
+
+public class HelloKor3 implements HelloWorld2 {
+
+	public void sayHello() {
+
+		System.out.println("안녕하세요2~");
+
+	}
+	
+}

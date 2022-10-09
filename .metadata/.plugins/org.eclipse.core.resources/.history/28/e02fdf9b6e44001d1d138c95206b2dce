@@ -1,0 +1,27 @@
+package kr.co.ezen.main;
+
+import kr.co.ezen.beans2.*;
+
+public class mainClass2 {
+
+	public static void main(String[] args) {
+		
+		HelloEng2 hEng2 = new HelloEng2();
+		callHelloEng(hEng2);
+		
+		HelloKor2 hKor2 = new HelloKor2();
+		callHelloEng(hKor2);
+		
+	}
+
+	private static void callHelloEng(HelloKor2 hKor2) {
+		hKor2.sayHello();
+		
+	}
+
+	private static void callHelloEng(HelloEng2 hEng2) {
+		hEng2.sayHello();
+		
+	}
+
+}

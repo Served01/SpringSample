@@ -1,0 +1,8 @@
+package kr.co.ezen.processor;
+
+import org.springframework.beans.factory.config.BeanPostProcessor;
+
+public class testBeanPostProcessesor implements BeanPostProcessor {
+
+	
+}

@@ -1,0 +1,12 @@
+
+public class Adder {
+
+	public static void main(String[] args) {
+		int sum = 100 + 500;
+		System.out.println("Adder: " + sum);
+
+	}
+
+}
+/*
+Spring

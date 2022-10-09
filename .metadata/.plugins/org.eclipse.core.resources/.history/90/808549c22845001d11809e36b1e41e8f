@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+       default-init-method="default_init"
+       >
+
+<!-- 의존성 주입(Dependency Injection) -->
+<!-- single mode, prototype -->
+
+	   <!-- <bean id="tb3" class="kr.co.ezen.beans.TestBean3" scope="prototype"
+	   			init-method="testBean_init" destroy-method="testBean_destroy"></bean> -->
+	   			
+	   <bean id="tb3" class="kr.co.ezen.beans.TestBean3" lazy-init="true"
+	   			init-method="testBean_init" destroy-method="testBean_destroy"></bean>
+	   			
+	   <bean id="tb4" class="kr.co.ezen.beans.TestBean4" lazy-init="true"></bean>
+	   
+</beans>
