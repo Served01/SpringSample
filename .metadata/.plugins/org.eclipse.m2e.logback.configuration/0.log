@@ -6054,3 +6054,10 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact commons-beanu
 2022-10-08 08:05:58,014 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Github_WS\Springworkspace\WebSpringSample2_getPost\src\test\resources
 2022-10-08 08:16:16,011 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
 2022-10-08 08:16:24,630 [Worker-8: reload maven project] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.hibernate:hibernate-validator:jar:6.2.1.Final has been relocated to org.hibernate.validator:hibernate-validator:jar:6.2.1.Final
+2022-10-09 22:24:20,902 [Worker-9: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2022-10-09 22:25:53,720 [Worker-6: Launching Executing test in E__Github_WS_Springworkspace_SpringSampleProject] INFO  o.e.m.i.launch.MavenLaunchDelegate - E:\Github_WS\Springworkspace\SpringSampleProject
+2022-10-09 22:25:53,735 [Worker-6: Launching Executing test in E__Github_WS_Springworkspace_SpringSampleProject] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B test
+2022-10-09 22:25:58,392 [Worker-19: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-09 22:25:58,395 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-10-09 22:25:58,396 [Worker-19: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-09 22:25:58,397 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
