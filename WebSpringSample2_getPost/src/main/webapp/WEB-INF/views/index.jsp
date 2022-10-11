@@ -11,15 +11,29 @@
 	<img src="image/bmwmodel_205.png"/><br>
 	<a href="test1">test1</a><br>
 	<a href="test2">test2 post</a><br>
+	<hr>
+	<form action="test2" method="get">
+		<a href="test2">test2 get</a><br>
+		<button type="submit">test2 get</button>
+	</form><br>
 	<form action="test2" method="post">
+		<a href="test2">test2 post</a><br>
 		<button type="submit">test2 post</button>
-	</form>
-	<a href="test3">test3 get</a><br>
-		<form action="test3" method="get">
+	</form><br>
+	<form action="test3" method="get">
+		<a href="test3">test3 get</a><br>
 		<button type="submit">test3 get</button>
-	</form>
-
-			
+	</form><br>
+	<form action="test3" method="post">
+		<a href="test3">test3 post</a><br>
+		<button type="submit">test3 post</button>
+	</form><br>
+	<hr>
+	<a href="test4">test4 get</a><br>
+	<form action="test4" method="post">
+		<button type="submit">test4 post</button>
+	</form><br>
+	
 </body>
 </html>
 

@@ -2,4 +2,5 @@
 <modules>
   <module moduleId="org.eclipse.jst.jee.server:WebSpringSample1_URLMapping" serverId="Tomcat v9.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:WebSpringSample2_getPost" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:WebSpringSample3_parameter" serverId="Tomcat v9.0 Server at localhost"/>
 </modules>
