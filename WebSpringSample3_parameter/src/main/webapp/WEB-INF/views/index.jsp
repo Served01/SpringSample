@@ -35,10 +35,17 @@
 	<input type="checkbox" name="data2" value="200" >200
 	<input type="checkbox" name="data2" value="300" >300
 	<input type="checkbox" name="data2" value="400" >400
+	<br>
+	data3: 
+	<input type="checkbox" name="data3" value="100" >100
+	<input type="checkbox" name="data3" value="200" >200
+	<input type="checkbox" name="data3" value="300" >300
+	<input type="checkbox" name="data3" value="400" >400
+	<br>
 	<button type="submit">result3</button>
 	</form>
-	
-	
+	<hr>
+	<a href="test4?data1=100&data2=200&data3=300&data4=400&data5=500">test4</a>
 	
 </body>
 </html>
