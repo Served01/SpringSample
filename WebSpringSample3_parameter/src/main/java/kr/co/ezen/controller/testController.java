@@ -7,17 +7,20 @@ import javax.servlet.http.HttpServletRequest;
 
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
-
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.context.request.WebRequest;
+import org.springframework.web.servlet.ModelAndView;
 
 import kr.co.ezen.beans.DataBean;
 import kr.co.ezen.beans.DataBean2;
+import kr.co.ezen.beans.DataBean3;
 
 @Controller
 public class testController {
@@ -280,6 +283,50 @@ public class testController {
 
 		}
 	
+	
+	@GetMapping("/test15")
+	public String test15(HttpServletRequest request) {
+	     request.setAttribute("data1", 100);
+	     request.setAttribute("data2", 200);
+	     return "result15";
+	}
+	
+	
+	@GetMapping("/test16")
+	public String test16(Model model) {
+	     model.addAttribute("data3", 300);
+	     model.addAttribute("data4", 400);
+	     return "result16";
+	}
+	
+	
+	@GetMapping("/test17")
+	public ModelAndView test17(ModelAndView mav) {
+	     mav.addObject("data5", 500);
+	     mav.addObject("data6", 600);
+	     mav.setViewName("result17");
+	     return mav;
+	}
+	
+	
+	@GetMapping("/test18")
+	public String test18(@ModelAttribute DataBean3 bean3) {
+	     
+		System.out.println("data1: "+bean3.getData1());
+		System.out.println("data2: "+bean3.getData2());
+	     return "result18";
+	     
+	}
+	
+	@PostMapping("/test19")
+	public String test19(@ModelAttribute DataBean3 bean3) {
+	     
+		System.out.println("data1: "+bean3.getData1());
+		System.out.println("data2: "+bean3.getData2());
+		
+	    return "result18";
+	     
+	}
 	
 	
 	

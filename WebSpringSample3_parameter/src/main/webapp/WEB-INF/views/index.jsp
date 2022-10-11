@@ -66,6 +66,20 @@
 	<a href="test13?data1=100&data2=200&data2=300&data2=400">test13</a>
 	<hr>
 	<a href="test14?data1=100&data2=200&data2=300&data2=400&data3=500&data4=600&data4=700">test14</a>
+	<hr>
+	<a href="test15">test15 data1, data2 - HttpServletRequest, request </a>
+	<hr>
+	<a href="test16">test16 data3, data4 - Model, model </a>
+	<hr>
+	<a href="test17">test17 data5, data6 - ModelAndView, mav </a>
+	<hr>
+	<a href="test18">test18 data1, data2 - DataBean3, bean3 </a>
+	<form action="test19" method="post">
+		data1: <input type="text" name="data1"/>
+		data2: <input type="text" name="data2"/>
+		<button type="submit">확인</button>
+	</form>
+	
 	
 </body>
 </html>
