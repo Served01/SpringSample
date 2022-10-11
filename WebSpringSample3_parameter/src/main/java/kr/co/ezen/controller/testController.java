@@ -1,13 +1,23 @@
 package kr.co.ezen.controller;
 
+import java.util.List;
+import java.util.Map;
+
 import javax.servlet.http.HttpServletRequest;
+
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
+
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.context.request.WebRequest;
+
+import kr.co.ezen.beans.DataBean;
+import kr.co.ezen.beans.DataBean2;
 
 @Controller
 public class testController {
@@ -105,6 +115,173 @@ public class testController {
 		
 		return "result4";//result4.jsp
 	}
+	
+	@GetMapping("/test5/{data1}/{data2}/{data3}/{data4}/{data5}")
+	public String test5(@PathVariable int data1,
+					    @PathVariable int data2,
+					    @PathVariable int data3,
+					    @PathVariable int data4,
+			 			@PathVariable int data5) {
+		
+		System.out.println("data1: "+data1);
+		System.out.println("data2: "+data2);
+		System.out.println("data3: "+data3);
+		System.out.println("data4: "+data4);
+		System.out.println("data5: "+data5);
+		
+		
+		
+		int sum= data1 + data2 + data3 + data4 + data5;
+		System.out.println("덧셈의 합계: "+sum);
+		
+		return "result5";
+	}
+	
+	@GetMapping("/test6")
+	public String test6(@RequestParam int data1,
+						@RequestParam int data2,
+						@RequestParam int data3,
+						@RequestParam int data4,
+						@RequestParam int data5) {
+		
+		int sum= data1 + data2 + data3 + data4 + data5;
+		System.out.println("덧셈의 합계: "+sum);	
+		
+	
+	return "result6";//result6.jsp
+	}
+	
+	@GetMapping("/test7")
+	public String test7(@RequestParam(value="data1") int value1,
+						@RequestParam(value="data2") int value2,
+						@RequestParam(value="data3") int value3,
+						@RequestParam(value="data4") int value4,
+						@RequestParam(value="data5") int value5) {
+		
+		int sum= value1 + value2 + value3 + value4 + value5;
+		System.out.println("덧셈의 합계: "+sum);	
+		
+	
+	return "result7";//result7.jsp
+	}
+	
+	@GetMapping("/test8")
+	public String test8(@RequestParam String data1,
+						@RequestParam String data2,
+						@RequestParam String data3,
+						@RequestParam(required=false) String data4,
+						@RequestParam(required=false) String data5) {
+		
+		
+		System.out.println("data1: "+data1);	
+		System.out.println("data2: "+data2);	
+		System.out.println("data3: "+data3);	
+		System.out.println("data4: "+data4); //null
+		System.out.println("data5: "+data5); //null	
+	
+	return "result7";//result7.jsp
+	}
+	
+	@GetMapping("/test9")
+	public String test9(@RequestParam String data1,
+						@RequestParam String data2,
+						@RequestParam String data3,
+						@RequestParam(defaultValue = "0") int data4,
+						@RequestParam(defaultValue = "0") int data5) {
+		
+		
+		System.out.println("data1: "+data1);	
+		System.out.println("data2: "+data2);	
+		System.out.println("data3: "+data3);	
+		System.out.println("data4: "+data4); //0
+		System.out.println("data5: "+data5); //0	
+	
+	return "result7";//result7.jsp
+	}
+	
+	@GetMapping("/test10")
+	public String test10(@RequestParam String data1,
+						@RequestParam String data2,
+						@RequestParam String data3,
+						@RequestParam(required = false) int data4,
+						@RequestParam(defaultValue = "0") int data5) {
+		
+		
+		System.out.println("data1: "+data1);	
+		System.out.println("data2: "+data2);	
+		System.out.println("data3: "+data3);	
+		System.out.println("data4: "+data4); //0
+		System.out.println("data5: "+data5); //0	
+	
+	return "result7";//result7.jsp
+	}
+	
+	@GetMapping("/test11")
+	public String test11(@RequestParam Map<String, String> map) {
+			  
+		String data1 = map.get("data1");
+		String data2 = map.get("data2");
+		String data3 = map.get("data3");
+		
+		System.out.println(data1);
+		System.out.println(data2);
+		System.out.println(data3);
+		
+		return "result11";
+
+		}
+	@GetMapping("/test12")
+	public String test12(@RequestParam Map<String, String> map,
+									@RequestParam List<String> data2) {
+			  
+		
+		
+		for(String str : data2) {
+		System.out.println(str);
+		}
+		
+		return "result11";
+
+		}
+	
+	
+	@GetMapping("/test13")
+	public String test13(@RequestParam Map<String, String> map,
+						 @RequestParam List<String> data2) {
+			  
+		
+		for(String str : data2) {
+		System.out.println(str);
+		
+		}
+		
+		return "result11";
+
+		}
+	
+	
+	@GetMapping("/test14")
+	//@ModelAtrribute는 생략이 가능하다.
+	public String test14(@ModelAttribute DataBean bean1, @ModelAttribute DataBean2 bean2) {
+		
+		System.out.println(bean1.getData1());
+		
+		for(int str : bean1.getData2()) {
+			System.out.println(str);
+		}
+		
+		System.out.println(bean2.getData3());
+		
+		for(int str2 : bean2.getData4()) {
+			System.out.println(str2);
+		}
+		
+		return "result11";
+
+		}
+	
+	
+	
 	
 	
 }
