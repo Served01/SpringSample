@@ -1,7 +1,6 @@
 package kr.co.ezen.main;
 
 import org.springframework.beans.factory.xml.XmlBeanFactory;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.core.io.ClassPathResource;
 
 import kr.co.ezen.beans.HelloEng;
@@ -80,6 +79,7 @@ import kr.co.ezen.beans.TestBean3;
  * 
  */
 
+@SuppressWarnings("deprecation")
 public class mainClass {
 
 	public static void main(String[] args) {

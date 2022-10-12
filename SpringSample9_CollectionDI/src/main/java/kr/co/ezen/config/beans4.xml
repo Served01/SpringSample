@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+		
+		
+		<!-- getBean()이라는 것을 호출할 때, 객체가 생성됩니다.
+		고정 불변의 데이터를 처리하는 경우에 사용합니다. -->
+	   <bean id="tb4" class="kr.co.ezen.beans.TestBean4" lazy-init="true">
+	   		<property name="properties">
+	   			<props>
+	   				<prop key = "p1">반갑습니다.1</prop>
+	   				<prop key = "p2">반갑습니다.2</prop>
+	   				<prop key = "p3">1000</prop>
+	   				<prop key = "p4">2000</prop>
+	   				<prop key = "p5">1000.123</prop>
+	   				<prop key = "p6">2000.123</prop>
+	   			</props>
+	   		</property>
+	   		
+	   </bean>
+</beans>

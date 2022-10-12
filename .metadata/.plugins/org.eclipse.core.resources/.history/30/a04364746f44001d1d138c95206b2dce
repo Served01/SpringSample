@@ -1,6 +1,0 @@
-package kr.co.ezen.beans3;
-
-public class HelloEng3 extends HelloWorld2 {
-
-
-}

@@ -1,11 +1,6 @@
 package kr.co.ezen.main;
 
 
-import java.awt.geom.Point2D;
-import java.util.Scanner;
-
-import org.eclipse.jdt.internal.compiler.ast.ReturnStatement;
-import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import kr.co.ezen.beans.TestBean;
 /*

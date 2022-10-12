@@ -2,11 +2,7 @@ package kr.co.ezen.main;
 
 
 import java.util.Scanner;
-
-import org.eclipse.jdt.internal.compiler.ast.ReturnStatement;
-import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
 import kr.co.ezen.beans.TestBean3;
 import kr.co.ezen.beans.TestBean4;
 import kr.co.ezen.processor.TestBeanPostProcessor;
@@ -33,6 +29,7 @@ public class mainClass {
 		TestBean4 t10 = context.getBean("tb4", TestBean4.class);
 		System.out.println("t10 : " + t10);
 		
+		@SuppressWarnings("resource")
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("x의 값을 입력하세요.");
 		int x = scanner.nextInt();

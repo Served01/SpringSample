@@ -121,6 +121,7 @@ public class mainClass {
 		System.out.println("덧셈의 합계9 : " + result9);//25.0
 		System.out.println(t9);
 		
+		context.close();
 		
 	}
 

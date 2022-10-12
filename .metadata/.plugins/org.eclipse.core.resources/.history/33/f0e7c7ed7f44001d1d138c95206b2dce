@@ -1,9 +1,0 @@
-package kr.co.ezen.beans;
-
-public class Testbean {
-
-	public Testbean() {
-		System.out.println("생성자 입입니다~");
-	}
-	
-}

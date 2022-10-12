@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+		
+		
+		<!-- getBean()이라는 것을 호출할 때, 객체가 생성됩니다.
+		고정 불변의 데이터를 처리하는 경우에 사용합니다. -->
+	   <bean id="tb2" class="kr.co.ezen.beans.TestBean2" lazy-init="true">
+	   		<property name="set1">
+	   			<set>
+	   				<value>반갑습니다.1</value>
+	   				<value>반갑습니다.2</value>
+	   				<value>반갑습니다.3</value>
+	   			</set>
+	   		</property>
+	   		<property name="set2">
+	   			<set>
+	   				<value>1000</value>
+	   				<value>2000</value>
+	   				<value>3000</value>
+	   			</set>
+	   		</property>
+	   		<property name="set3">
+	   			<set>
+	   				<value>1000.123</value>
+	   				<value>2000.123</value>
+	   				<value>3000.123</value>
+	   			</set>
+	   		</property>
+	   </bean>
+</beans>

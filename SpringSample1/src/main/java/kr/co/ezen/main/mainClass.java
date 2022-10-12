@@ -20,6 +20,7 @@ import kr.co.ezen.beans3.HelloKor3;
 
 public class mainClass {
 
+	@SuppressWarnings("static-access")
 	public static void main(String[] args) {
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("kr/co/ezen/config/beans.xml");
 		
