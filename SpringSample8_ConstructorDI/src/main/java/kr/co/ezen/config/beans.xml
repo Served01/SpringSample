@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+		
+		
+		<!-- getBean()이라는 것을 호출할 때, 객체가 생성됩니다.
+		고정 불변의 데이터를 처리하는 경우에 사용합니다. -->
+	   <bean id="tb1" class="kr.co.ezen.beans.TestBean">
+	   		<property name="data1" value="1000"/><!-- setData1(1000) -->
+	   		<property name="data2" value="500.123"/>
+	   		<property name="data3" value="true"/>
+	   		<property name="data4" value="hyun"/>
+	   </bean>
+	   		   
+</beans>

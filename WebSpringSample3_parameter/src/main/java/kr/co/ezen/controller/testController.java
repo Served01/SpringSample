@@ -319,8 +319,8 @@ public class testController {
 	}
 	
 	@PostMapping("/test19")
-	public String test19(@ModelAttribute DataBean3 bean3) {
-	     
+	public String test19(@ModelAttribute("hyunBean") DataBean3 bean3) {
+	//public String test19(DataBean3 bean3) {
 		System.out.println("data1: "+bean3.getData1());
 		System.out.println("data2: "+bean3.getData2());
 		

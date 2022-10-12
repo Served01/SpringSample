@@ -4,7 +4,6 @@ public class DataBean3 {
 	
 	private int data1;
 	private int data2;
-	
 	public int getData1() {
 		return data1;
 	}
@@ -17,6 +16,9 @@ public class DataBean3 {
 	public void setData2(int data2) {
 		this.data2 = data2;
 	}
+	
+	
+	
 	
 	
 	
