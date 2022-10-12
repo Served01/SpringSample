@@ -6,11 +6,9 @@
 		
 		<!-- getBean()이라는 것을 호출할 때, 객체가 생성됩니다.
 		고정 불변의 데이터를 처리하는 경우에 사용합니다. -->
-	   <bean id="tb1" class="kr.co.ezen.beans.TestBean">
-	   		<property name="data1" value="1000"/><!-- setData1(1000) -->
-	   		<property name="data2" value="500.123"/>
-	   		<property name="data3" value="true"/>
-	   		<property name="data4" value="hyun"/>
+	   <bean id="tb1" class="kr.co.ezen.beans.TestBean" lazy-init="default">
+	   		<constructor-arg index="0" type="int" value="123"></constructor-arg>
+	   		<constructor-arg index="1" type="double" value="123.123"></constructor-arg>
+	   		<constructor-arg index="2" type="String" value="hello"></constructor-arg>
 	   </bean>
-	   		   
 </beans>

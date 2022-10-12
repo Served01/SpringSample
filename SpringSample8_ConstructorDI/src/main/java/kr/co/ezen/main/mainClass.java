@@ -52,26 +52,18 @@ public class mainClass {
 		
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("kr/co/ezen/config/beans.xml");
 		
-		/*Scanner scanner = new Scanner(System.in);
+		/*
+		Scanner scanner = new Scanner(System.in);
 		int x = scanner.nextInt();
 		double y = scanner.nextDouble();
-		boolean b = scanner.nextBoolean();
 		String z = scanner.next();
 		
-		TestBean t1 = new TestBean();
+		TestBean t1 = new TestBean(x,y,z);
 		*/
+		
 		TestBean t1 = context.getBean("tb1", TestBean.class);
-		/*System.out.println(t1);// address value = pointer value
-		t1.setData1(x);
-		t1.setData2(y);
-		t1.setData3(b);
-		t1.setData4(z);
-		*/
-		System.out.println(t1.getData1());//1500
-		System.out.println(t1.getData2());
-		
-		System.out.println(t1.getData4());
-		
+		System.out.println(t1);
+		t1.printData();
 		
 		context.close();
 		

@@ -1,7 +1,0 @@
-package kr.co.ezen.beans2;
-
-public interface HelloWorld {
-	
-	
-	
-}
