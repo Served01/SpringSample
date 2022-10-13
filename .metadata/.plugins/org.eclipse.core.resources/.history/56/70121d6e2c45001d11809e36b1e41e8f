@@ -1,7 +1,0 @@
-package kr.co.ezen.processor;
-
-
-public class testBeanPostProcessesor implements BeanPostProcessor {
-
-	
-}

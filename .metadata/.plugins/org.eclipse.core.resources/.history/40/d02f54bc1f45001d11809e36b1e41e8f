@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="SpringSample5_BeanLifeCycle2">
-        <property name="context-root" value="SpringSample5_BeanLifeCycle2"/>
-    </wb-module>
-</project-modules>
