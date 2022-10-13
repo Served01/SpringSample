@@ -70,11 +70,22 @@
 		</list>
 	</section>
 	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
 	</section>
 	<section name="org.eclipse.m2e.core.pom.dependencies">
 	</section>
 	<section name="wizardPage">
 		<list key="groupId">
+			<item value="WebSpringSample6_"/>
+			<item value="WebSpringSample5_RedirectForward"/>
+			<item value="WebSpringSample4_formCustomTag2"/>
 			<item value="WebSpringSample4_formCustom"/>
 			<item value="SpringSample9_CollectionDI"/>
 			<item value="SpringSample8_ConstructorDI"/>
@@ -87,6 +98,9 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="WebSpringSample6_"/>
+			<item value="WebSpringSample5_RedirectForward"/>
+			<item value="WebSpringSample4_formCustomTag2"/>
 			<item value="WebSpringSample4_formCustom"/>
 			<item value="SpringSample9_CollectionDI"/>
 			<item value="SpringSample8_ConstructorDI"/>
