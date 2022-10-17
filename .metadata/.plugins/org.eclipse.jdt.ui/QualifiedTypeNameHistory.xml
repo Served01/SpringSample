@@ -16,7 +16,6 @@
     <fullyQualifiedTypeName name="org.apache.bval.jsr303.extensions.ReturnAccess"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
     <fullyQualifiedTypeName name="javax.management.loading.PrivateClassLoader"/>
-    <fullyQualifiedTypeName name="kr.co.ezen.beans.DataBean"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ModelAttribute"/>
     <fullyQualifiedTypeName name="kr.co.ezen.beans.DataBean2"/>
     <fullyQualifiedTypeName name="kr.co.ezen.beans.DataBean3"/>
@@ -27,7 +26,6 @@
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="java.util.Iterator"/>
     <fullyQualifiedTypeName name="org.apache.tomcat.jni.Mmap"/>
-    <fullyQualifiedTypeName name="kr.co.ezen.beans.TestBean"/>
     <fullyQualifiedTypeName name="java.util.function.BiConsumer"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.Set"/>
@@ -41,11 +39,13 @@
     <fullyQualifiedTypeName name="kr.co.ezen.beans.TestBean4"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="java.lang.Double"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="org.springframework.ui.Model"/>
     <fullyQualifiedTypeName name="org.springframework.web.servlet.ModelAndView"/>
+    <fullyQualifiedTypeName name="kr.co.ezen.beans.DataBean"/>
+    <fullyQualifiedTypeName name="kr.co.ezen.beans.TestBean"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+		
+		<bean id="tb1" class="kr.co.ezen.beans.TestBean" lazy-init="true">
+		<!-- lazy-init는 프로그램이 무겁지 않도록 사용할 때만 object를 만드는 기능이다. true로 해놓으면 사용할 때만 만든다. -->
+			<property name="data1" ref="data_bean"></property>
+			<property name="data2" ref="data_bean"></property>
+		</bean>
+		
+		<bean id="data_bean" class="kr.co.ezen.beans.DataBean" scope="prototype"></bean>
+		
+</beans>
