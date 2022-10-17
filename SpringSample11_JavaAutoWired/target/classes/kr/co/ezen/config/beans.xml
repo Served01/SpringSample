@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+		
+		<!-- 생성자 주입 -->
+		<bean id="xml1" class="kr.co.ezen.beans.TestBean" lazy-init="true">
+			<constructor-arg value="100" type="int" index="0"></constructor-arg>
+			<constructor-arg value="123.456" index="1"></constructor-arg>
+			<constructor-arg value="임성찬" index="2"></constructor-arg>
+			<constructor-arg ref="data_bean" index="3"></constructor-arg>		
+		</bean>
+		
+		<bean id="data_bean" class="kr.co.ezen.beans.DataBean"></bean>
+		
+		<bean id="xml2" class="kr.co.ezen.beans.TestBean" lazy-init="true">
+			<property name="data1" value="100"></property>
+			<property name="data2" value="100.123"></property>
+			<property name="data3" value="임성찬3"></property>
+			<property name="data4" ref="data_bean"></property>
+		</bean>
+		
+		<bean id="data_bean2" class="kr.co.ezen.beans.DataBean"></bean>
+		
+</beans>
