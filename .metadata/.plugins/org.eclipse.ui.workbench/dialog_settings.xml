@@ -23,6 +23,7 @@
 		<item key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="true"/>
 		<item key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID" value="true"/>
 		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="D:\Student\Springworkspace\Springworkspace.zip"/>
 			<item value="D:\학생방\Springworkspace\Springworkspace.zip"/>
 			<item value="C:\Users\607-17\Desktop\2022-10-05.zip"/>
 			<item value="2022/10/05.zip"/>

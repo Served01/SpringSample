@@ -1,70 +1,72 @@
 package kr.co.ezen.controller;
 
-import javax.servlet.http.HttpServletRequest;
-
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.servlet.ModelAndView;
+
 
 @Controller
+/*
+ * @PropertySources({
+ * 
+ * @PropertySource("/WEB-INF/properties/data1.properties"),
+ * 
+ * @PropertySource("/WEB-INF/properties/data2.properties") })
+ */
+@PropertySource(value = {
+		("/WEB-INF/properties/data1.properties"),
+		("/WEB-INF/properties/data2.properties")
+	   })
 public class TestController {
+
+	@Value("${aaa.a1}")
+    private int a1;// 100
+
+	@Value("${aaa.a2}")
+    private String a2;// 안녕하세요?
+	
+	@Value("${bbb.b1}")
+    private int b1;// 200
+
+	@Value("${bbb.b2}")
+    private String b2;// 방가방가
+	
+	@Value("${ccc.c1}")
+    private int c1;// 300
+
+	@Value("${ccc.c2}")
+    private String c2;// 2안녕하세요?
+	
+	@Value("${ddd.d1}")
+    private int d1;// 400
+
+	@Value("${ddd.d2}")
+    private String d2;// 2방가방가
+	
 	
 	@GetMapping("/test1")
-	public String test1(HttpServletRequest request) {
-			
-		//                   objectName, String
-		request.setAttribute("data1", "문자열입니다.");
-		request.setAttribute("data2", "문자열입니다.2");
+	public String test1() {		
 		
-		return "forward:/result1";
-		//return "redirect:/result1";
-		//return "test1";
+		System.out.println(a1);
+		System.out.println(a2);
+		System.out.println(b1);
+		System.out.println(b2); 
 		
+		System.out.println(c1);
+		System.out.println(c2);
+		System.out.println(d1);
+		System.out.println(d2); 
+					
+		return "test1";
 	}
 	
 	@GetMapping("/result1")
 	public String result1() {
+		
 		return "result1";
 	}
-
-	@GetMapping("/test2")
-	public String test2(Model model) {
-			
-		//                   objectName, String
-		model.addAttribute("data3", "문자열입니다.3");
-		model.addAttribute("data4", "문자열입니다.4");
 		
-		//return "forward:/result2"; //넘어오는 값이 존재하므로 출력이됩니다.
-		//return "redirect:/result2"; //넘어오는 값이 없으므로 출력이 안됩니다.
-		return "test2";
-		
-	}
-	
-	@GetMapping("/result2")
-	public String result2() {
-		return "result2";
-	}
 	
 	
-	@GetMapping("/test3")
-	public ModelAndView test3(ModelAndView maView) {
-			
-		//                   objectName, String
-		maView.addObject("data5", "문자열입니다.5");
-		maView.addObject("data6", "문자열입니다.6");
-		
-		maView.setViewName("forward:/result3");
-		
-		return maView;
-		//return "forward:/result3"; //넘어오는 값이 존재하므로 출력이됩니다.
-		//return "redirect:/result3"; //넘어오는 값이 없으므로 출력이 안됩니다.
-		//return "test3";
-		
-	}
-	
-	@GetMapping("/result3")
-	public String result3() {
-		return "result3";
-	}
 }

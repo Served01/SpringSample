@@ -2,22 +2,31 @@ package kr.co.ezen.beans;
 
 public class DataBean {
 	
-	private String userid_input;
-	private String userid_output;
+	private String data1;
+	private String data2;
+	private int data3;
+	
+	public String getData1() {
+		return data1;
+	}
+	public void setData1(String data1) {
+		this.data1 = data1;
+	}
+	public String getData2() {
+		return data2;
+	}
+	public void setData2(String data2) {
+		this.data2 = data2;
+	}
+	public int getData3() {
+		return data3;
+	}
+	public void setData3(int data3) {
+		this.data3 = data3;
+	}
+		
 	
 	
-	public String getUserid_input() {
-		return userid_input;
-	}
-	public void setUserid_input(String userid_input) {
-		this.userid_input = userid_input;
-	}
-	public String getUserid_output() {
-		return userid_output;
-	}
-	public void setUserid_output(String userid_output) {
-		this.userid_output = userid_output;
-	}
 	
 	
 	

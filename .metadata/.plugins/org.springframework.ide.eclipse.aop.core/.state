@@ -1,4 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
+<aop-project name="SpringSample06_BeanPostProcessor"/>
+<aop-project name="WebSpringSample07_SessionScope"/>
+<aop-project name="SpringSample05_BeanLifeCycle2"/>
+<aop-project name="WebSpringSample01_URLMapping"/>
+<aop-project name="WebSpringSample09_SessionScopeBeanXML"/>
+<aop-project name="SpringSample13_JSR250Annotation"/>
+<aop-project name="SpringSample10_AutoWired"/>
+<aop-project name="WebSpringSample06_requestScope"/>
+<aop-project name="WebSpringSample03_parameter"/>
+<aop-project name="SpringSample02_insaXML"/>
+<aop-project name="SpringSample11_JavaAutowired"/>
+<aop-project name="WebSpringSample10_Properties"/>
+<aop-project name="SpringSample04_BeanLifeCycle"/>
+<aop-project name="SpringSample03"/>
+<aop-project name="SpringSample08_ConstructorDI"/>
+<aop-project name="WebSpringSample05_RedirectForward"/>
+<aop-project name="SpringSample12_AnnotationBean"/>
+<aop-project name="WebSpringSample02_getPost"/>
+<aop-project name="WebSpringSample12_XMLMessageProperties"/>
+<aop-project name="WebSpringSample04_formCustomTag2"/>
+<aop-project name="SpringSample09_CollectionDI"/>
+<aop-project name="SpringSample07_MethodDI"/>
 <aop-project name="SpringSample01"/>
+<aop-project name="WebSpringSample04_formCustomTag"/>
+<aop-project name="WebSpringSample11_MessageProperties"/>
+<aop-project name="WebSpringSample08_SessionScopeBean"/>
 </aop-reference-model>
