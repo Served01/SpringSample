@@ -83,6 +83,10 @@
 	</section>
 	<section name="wizardPage">
 		<list key="groupId">
+			<item value="WebSpringSample09_SessionScopeBeanXML"/>
+			<item value="WebSpringSample08_SessionScopeBean"/>
+			<item value="WebSpringSample07_SessionScope"/>
+			<item value="WebSpringSample10_Properties"/>
 			<item value="WebSpringSample6_"/>
 			<item value="WebSpringSample5_RedirectForward"/>
 			<item value="WebSpringSample4_formCustomTag2"/>
@@ -98,6 +102,10 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="WebSpringSample09_SessionScopeBeanXML"/>
+			<item value="WebSpringSample08_SessionScopeBean"/>
+			<item value="WebSpringSample07_SessionScope"/>
+			<item value="WebSpringSample10_Properties"/>
 			<item value="WebSpringSample6_"/>
 			<item value="WebSpringSample5_RedirectForward"/>
 			<item value="WebSpringSample4_formCustomTag2"/>

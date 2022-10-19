@@ -17,7 +17,6 @@
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
     <fullyQualifiedTypeName name="javax.management.loading.PrivateClassLoader"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ModelAttribute"/>
-    <fullyQualifiedTypeName name="kr.co.ezen.beans.DataBean3"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
     <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
@@ -38,18 +37,25 @@
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
-    <fullyQualifiedTypeName name="org.springframework.ui.Model"/>
     <fullyQualifiedTypeName name="org.springframework.web.servlet.ModelAndView"/>
     <fullyQualifiedTypeName name="kr.co.ezen.beans.TestBean3"/>
-    <fullyQualifiedTypeName name="kr.co.ezen.beans.DataBean2"/>
     <fullyQualifiedTypeName name="kr.co.ezen.beans.TestBean4"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
     <fullyQualifiedTypeName name="java.beans.Beans"/>
     <fullyQualifiedTypeName name="kr.co.ezen.config.BeanConfigClass"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
     <fullyQualifiedTypeName name="kr.co.ezen.beans.TestBean2"/>
-    <fullyQualifiedTypeName name="kr.co.ezen.beans.DataBean"/>
     <fullyQualifiedTypeName name="kr.co.ezen.beans.TestBean"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+    <fullyQualifiedTypeName name="kr.co.ezen.beans.DataBean"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="org.springframework.ui.Model"/>
+    <fullyQualifiedTypeName name="javax.annotation.Resource"/>
+    <fullyQualifiedTypeName name="kr.co.ezen.beans.DataBean2"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+    <fullyQualifiedTypeName name="org.springframework.web.context.annotation.SessionScope"/>
+    <fullyQualifiedTypeName name="kr.co.ezen.beans.DataBean3"/>
+    <fullyQualifiedTypeName name="kr.co.ezen.beans.DataBean4"/>
+    <fullyQualifiedTypeName name="org.hibernate.validator.internal.util.stereotypes.Lazy"/>
 </qualifiedTypeNameHistroy>
