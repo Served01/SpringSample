@@ -1,33 +1,28 @@
 package kr.co.ezen.beans;
 
 public class TestBean4 {
-	
-	//className으로 지정
+
+	// className으로 지정
 	private int data1;
 	private String data2;
 	private double data3;
 	private DataBean4 data4;
 	private DataBean4 data5;
 	
-	//생성자 작성
+	// 생성자 작성
 	public TestBean4(DataBean4 data4, DataBean4 data5) {
 		this.data4 = data4;
-		this.data5 = data5;
-		
+		this.data5 = data5;		
 	}
-	
-	//매개변수가 없이 생성자를 주입하여 객체를 생성하는 경우
-	public TestBean4(int data1, String data2, double data3, DataBean4 data4, DataBean4 data5) {
-		
+	// 매개변수가 없이 생성자를 주입하여 객체를 생성하는 경우
+	public TestBean4(int data1, String data2, Double data3, DataBean4 data4, DataBean4 data5) {
 		this.data1 = data1;
 		this.data2 = data2;
 		this.data3 = data3;
 		this.data4 = data4;
-		this.data5 = data5;
-		
+		this.data5 = data5;		
 	}
-	
-	
+		
 	
 	public int getData1() {
 		return data1;
@@ -60,8 +55,5 @@ public class TestBean4 {
 		this.data5 = data5;
 	}
 	
-	
-	
-	
-	
+		
 }

@@ -1,23 +1,25 @@
 package kr.co.ezen.beans;
 
 public class TestBean {
-	
+
+	// className으로 지정	
 	private int data1;
 	private double data2;
 	private String data3;
 	private DataBean data4;
 	
+	//생성자 메소드
 	public TestBean() {
-		
+				
 	}
 	
 	
 	public TestBean(int data1, double data2, String data3, DataBean data4) {
 		this.data1 = data1;
 		this.data2 = data2;
-		this.data3 = data3;
+		this.data3 = data3;		
 		this.data4 = data4;
-	}
+	}	
 	
 	public int getData1() {
 		return data1;
@@ -45,7 +47,6 @@ public class TestBean {
 	public void setData4(DataBean data4) {
 		this.data4 = data4;
 	}
-	
 	
 	
 	
