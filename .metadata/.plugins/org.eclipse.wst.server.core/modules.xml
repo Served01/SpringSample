@@ -15,6 +15,7 @@
   <module moduleId="org.eclipse.jst.jee.server:WebSpringSample06_requestScope" serverId="Tomcat v9.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:WebSpringSample8_SessionScopeBean" serverId="Tomcat v9.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:WebSpringSample11_MessageProperties" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:WebSpringSample15_JSR-303ErrorMessageCustermarizing2" serverId="Tomcat v9.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:WebSpringSample10_Properties" serverId="Tomcat v9.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:WebSpringSample4_formCustomTag" serverId="Tomcat v9.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:WebSpringSample4_formCustomTag2" serverId="Tomcat v9.0 Server at localhost"/>

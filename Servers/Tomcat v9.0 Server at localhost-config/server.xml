@@ -153,7 +153,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="WebSpringSample14_ErrorMessageCustermarizing" path="/WebSpringSample14_ErrorMessageCustermarizing" reloadable="true" source="org.eclipse.jst.jee.server:WebSpringSample14_ErrorMessageCustermarizing"/></Host>
+      <Context docBase="WebSpringSample15_JSR-303ErrorMessageCustermarizing2" path="/WebSpringSample15_JSR-303ErrorMessageCustermarizing" reloadable="true" source="org.eclipse.jst.jee.server:WebSpringSample15_JSR-303ErrorMessageCustermarizing2"/></Host>
     </Engine>
   </Service>
 </Server>
