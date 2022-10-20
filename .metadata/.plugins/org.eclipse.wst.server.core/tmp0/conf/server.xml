@@ -153,7 +153,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="D:\Student\Springworkspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="D:\Student\Springworkspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\WebSpringSample11_MessageProperties" path="/WebSpringSample11_MessageProperties" reloadable="true" source="org.eclipse.jst.jee.server:WebSpringSample11_MessageProperties"/><Context docBase="D:\Student\Springworkspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\WebSpringSample10_Properties" path="/WebSpringSample10_Properties" reloadable="true" source="org.eclipse.jst.jee.server:WebSpringSample10_Properties"/></Host>
+      <Context docBase="D:\Student\Springworkspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="D:\Student\Springworkspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\WebSpringSample14_ErrorMessageCustermarizing" path="/WebSpringSample14_ErrorMessageCustermarizing" reloadable="true" source="org.eclipse.jst.jee.server:WebSpringSample14_ErrorMessageCustermarizing"/></Host>
     </Engine>
   </Service>
 </Server>

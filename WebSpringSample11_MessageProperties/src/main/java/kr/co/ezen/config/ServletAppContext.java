@@ -16,7 +16,7 @@ public class ServletAppContext implements WebMvcConfigurer{
 	
 	@Override
 	public void configureViewResolvers(ViewResolverRegistry registry) {
-		// TODO Auto-generated method stub
+		
 		WebMvcConfigurer.super.configureViewResolvers(registry);
 		registry.jsp("/WEB-INF/views/", ".jsp");
 	}
@@ -24,7 +24,7 @@ public class ServletAppContext implements WebMvcConfigurer{
 	
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
-		// TODO Auto-generated method stub
+		
 		WebMvcConfigurer.super.addResourceHandlers(registry);
 		registry.addResourceHandler("/**").addResourceLocations("/resources/");
 	}

@@ -4,7 +4,10 @@
   <module moduleId="org.eclipse.jst.jee.server:WebSpringSample09_SessionScopeBeanXML" serverId="Tomcat v9.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:WebSpringSample2_getPost" serverId="Tomcat v9.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:WebSpringSample3_parameter" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:WebSpringSample12_XMLMessageProperties" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:WebSpringSample14_ErrorMessageCustermarizing" serverId="Tomcat v9.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:WebSpringSample6_requestScope" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:WebSpringSample13_validationCheck" serverId="Tomcat v9.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:WebSpringSample5_RedirectForward" serverId="Tomcat v9.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:WebSpringSample6_" serverId="Tomcat v9.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:WebSpringSample1_URLMapping" serverId="Tomcat v9.0 Server at localhost"/>

@@ -18,6 +18,9 @@
 //com.springsource.config.ui.prefs.activePageIndex\:/SpringSampleProject/src/main/java/kr/co/ezen/config/beans222.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/WebSpringSample09_SessionScopeBeanXML/src/main/webapp/WEB-INF/config/root-context.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/WebSpringSample09_SessionScopeBeanXML/src/main/webapp/WEB-INF/config/servlet-context.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/WebSpringSample10_Properties/src/main/webapp/config/root-context.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/WebSpringSample10_Properties/src/main/webapp/config/servlet-context.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/WebSpringSample12_XMLMessageProperties/src/main/webapp/WEB-INF/config/root-context.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/WebSpringSample12_XMLMessageProperties/src/main/webapp/WEB-INF/config/servlet-context.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/WebSpringSample14_ErrorMessageCustermarizing/src/main/webapp/WEB-INF/config/servlet-context.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 eclipse.preferences.version=1

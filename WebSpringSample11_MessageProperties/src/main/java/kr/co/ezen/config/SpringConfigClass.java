@@ -8,7 +8,7 @@ import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatche
 //
 //	@Override
 //	public void onStartup(ServletContext servletContext) throws ServletException {
-//		// TODO Auto-generated method stub
+//		
 //		// Spring MVC ������Ʈ ������ ���� �ۼ��ϴ� Ŭ������ ��ü�� �����Ѵ�.
 //		AnnotationConfigWebApplicationContext servletAppContext = new AnnotationConfigWebApplicationContext();
 //		servletAppContext.register(ServletAppContext.class);
@@ -39,28 +39,28 @@ public class SpringConfigClass extends AbstractAnnotationConfigDispatcherServlet
 	
 	@Override
 	protected String[] getServletMappings() {
-		// TODO Auto-generated method stub
+		
 		return new String[] {"/"};
 	}
 	
 	
 	@Override
 	protected Class<?>[] getServletConfigClasses() {
-		// TODO Auto-generated method stub
+		
 		return new Class[] {ServletAppContext.class};
 	}
 	
 
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
-		// TODO Auto-generated method stub
+		
 		return new Class[] {RootAppContext.class};
 	}
 	
 	
 	@Override
 	protected Filter[] getServletFilters() {
-		// TODO Auto-generated method stub
+		
 		CharacterEncodingFilter encodingFilter = new CharacterEncodingFilter();
 		encodingFilter.setEncoding("UTF-8");
 		return new Filter[] {encodingFilter};
