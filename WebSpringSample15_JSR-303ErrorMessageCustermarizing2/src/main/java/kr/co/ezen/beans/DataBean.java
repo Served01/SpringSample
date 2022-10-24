@@ -12,8 +12,6 @@ import javax.validation.constraints.Null;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
-import org.springframework.lang.NonNull;
-
 public class DataBean {
 	
 	
