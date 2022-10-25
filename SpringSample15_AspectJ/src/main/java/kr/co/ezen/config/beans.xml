@@ -5,36 +5,17 @@
 	xmlns:c="http://www.springframework.org/schema/c"
 	xmlns:context="http://www.springframework.org/schema/context"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans 
-		http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+	http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/aop 
 		http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
 		http://www.springframework.org/schema/context 
 		http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 
-	<bean id="xml1" class="kr.co.ezen.beans.TestBean"></bean>
-	<bean id="xml2" class="kr.co.ezen.beans.TestBean2"></bean>
-	<bean id="xml3" class="kr.co.ezen.beans2.TestBean3"></bean>
+	<context:component-scan base-package="kr.co.ezen.beans"></context:component-scan>
+	<context:component-scan base-package="kr.co.ezen.advisor"></context:component-scan>
 	
-	<bean id="advisor1" class="kr.co.ezen.advisor.AdvisorClass"></bean>
-		<aop:config>
-			<aop:aspect ref="advisor1">
-			<aop:pointcut expression="execution(* method1())" id="point1"/>
-			<aop:before method="beforeMethod" pointcut-ref="point1"/>
-			<aop:after method="afterMethod" pointcut-ref="point1"/>
-			<aop:around method="aroundMethod" pointcut-ref="point1"/>
-			<aop:after-returning method="afterReturningMethod" pointcut-ref="point1"/>
-			<aop:after-throwing method="afterThrowingMethod" pointcut-ref="point1"/>
-			<!--  <aop:pointcut id="point1" expression="execution(void kr.co.ezen.beans.TestBean.method3(int))"/>
-			<aop:pointcut id="point1" expression="execution(void kr.co.ezen.beans.TestBean.method4(int, String))"/>
-			<aop:pointcut id="point1" expression="execution(void kr.co.ezen.beans.TestBean.method5(..))"/>
-			<aop:pointcut id="point1" expression="execution(int *.method2(..))"/>-->
-			<aop:pointcut id="point1" expression="execution(* *(..))"/>
-			</aop:aspect>
-			
-			
-		</aop:config>
+	<aop:aspectj-autoproxy/> <!-- AspectJ xml 설정 -->
+	
 		
-		
-	
-	
+
 </beans>

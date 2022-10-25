@@ -1,13 +1,13 @@
 package kr.co.ezen.main;
 
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import kr.co.ezen.beans.TestBean;
-import kr.co.ezen.beans.TestBean2;
 import kr.co.ezen.beans2.TestBean3;
 
 /* 
-AOP(Aspect Oriented Programming)
+ *AOP(Aspect Oriented Programming)
 ----------------------------------------------
  - 관점(관심사) 지향적 프로그래밍
  - 하나의 프로그램을 관점이라는 논리적인 단위로 분리하여 관리하려는 개념
@@ -30,29 +30,13 @@ AOP(Aspect Oriented Programming)
   4)after-returning : 예외 없이 호출된 메소드의 동작이 완료되면 동작하는 Advice
   5)after-throwing : 호출된 메소드 동작 중 예외가 발생하였을 때 동작하는 Advice
  
-	<!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
-	<dependency>
-    	<groupId>org.aspectj</groupId>
-    	<artifactId>aspectjweaver</artifactId>
-    	<version>1.9.9.1</version>
-    	<scope>runtime</scope>
-	</dependency>
-
-	<!-- https://mvnrepository.com/artifact/javax.annotation/javax.annotation-api -->
-	<dependency>
-	    <groupId>javax.annotation</groupId>
-	    <artifactId>javax.annotation-api</artifactId>
-	    <version>1.3.2</version>
-	</dependency>
-
- * 위의 두개의 dependency를 pom.xml에 추가해야 한다.
-
+  
  -Spring AOP 구현
   1)XML 구현방법
-  2)@AspectJ 어노테이션을 이용하여 구현 방법: java를 이용한 방식
+  2)@AspectJ 어노테이션을 이용하여 구현 방법 : java를 이용한 방식
  
  - method(  )의 유형
-   1)원형 : 접근제한자,  반환값, 메소드명( int kor, int eng, int mat), 매개변수(전달인자)
+   1)원형 : 접근제한자,  반환값, 메소드명(int kor, int eng, int mat), 매개변수(전달인자)
            public   void  method1(                                        ) {
 		System.out.println("method1의 호출.");		
 	}
@@ -61,8 +45,26 @@ AOP(Aspect Oriented Programming)
      메소드 오버라이딩(상속: interface, class, abstract class) 
      @Override
 
+- @AspectJ 어노테이션을 이용하여 Advisor 역할을 할 Bean을 설정할 수 있습니다.
+ - 종류 2가지 존재
+  1)xml : <aop:aspectj-autoproxy/> 
+  2)java파일 : @EnableAspectJAutoProxy
 
-	 Execution 명시자
+ - spring은 동적 프락시를 기반으로 AOP를 구현하므로 메소드 조인포인트만 지원합니다.
+   즉, 핵심기능(타깃)의 메소드가 호출되는 런타임 시점에만 부가기능(Advice)을 적용했습니다.
+ - 그러나, AspectJ와 같은 고급 AOP프레임워크를 사용하면 객체의 생성, 필드이 값의 조작, 조회, 
+   static메서드 호출 및 초기화 등의 다양한 형태의 작업에 부가기능을 적용할 수 있습니다.
+
+
+-지원되는 어노테이션의 종류 
+  1)@Before : 관심사 동작 이전에 호출 한다
+  2)@After : 관심사 동작 이후에 호출 됩니다.
+  3)@around : 관심사 이전과 이후에 호출합니다.
+  4)@AfterReturning : 예외 없이 정상적으로 완료되면 호출 됩니다.
+  5)@AfterThrowing : 예외가 발생하였을 때 호출됩니다.
+
+
+.Execution 명시자
 ----------------------------------------
  - 메소드 원형 : 접근제한자,  반환값, 메소드명( int kor, int eng, int mat), 매개변수(전달인자)
 
@@ -75,7 +77,7 @@ AOP(Aspect Oriented Programming)
    3) 클래스 이름 : 패키지를 포함한 클래스 이름
    4) 메소드 이름 : 메소드의 이름
    5) 매개변수 : 매개변수의 형태
-     - ** : 하나의 모든 것을 이미한다.
+     - ** : 하나의 모든 것을 의미한다.
      - .. : 개수에 상관없이 모든 것을 의미하다.
 
 	<!--context-aop 설정-->
@@ -152,11 +154,6 @@ AOP(Aspect Oriented Programming)
 		
 		</aop:aspect>
 </aop:config> 
-
-
-
-
-
  */
 
 public class mainClass {
@@ -165,30 +162,17 @@ public class mainClass {
 		//XML 방식
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("kr/co/ezen/config/beans.xml");
 		
-		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("kr/co/ezen/config/beans.xml");
+		TestBean xml1 = context.getBean(TestBean.class);
+		xml1.method1();
 		
-		TestBean bean1 = context.getBean("xml1", TestBean.class);
-		int sum = bean1.method1();
-		System.out.println(sum); //1000
+		//Java 방식
+		AnnotationConfigApplicationContext context2 = new AnnotationConfigApplicationContext(BeanConfigClass.class);
 		
-		int sum2 = bean1.method2();
-		System.out.println(sum2); //3000
-		
-		bean1.method3(20);
+		TestBean javaBean = context2.getBean(TestBean.class);
+		javaBean.method1();
 		
 		
-		bean1.method4(20,"원 입니다.");
-		
-		
-		bean1.method5(20, 100.123);
-		
-		TestBean2 bean2 = context.getBean("xml2", TestBean2.class);
-		int sum3 = bean2.method2();
-		System.out.println(sum3);
-		
-		TestBean3 bean3 = context.getBean("xml3", TestBean3.class);
-		bean3.method3();
-		
-		context.close();
+			
+		context.close();		
 	}	
 }

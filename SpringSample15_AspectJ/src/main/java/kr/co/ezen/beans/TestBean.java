@@ -6,19 +6,14 @@ import org.springframework.stereotype.Component;
 public class TestBean {
 
 	public TestBean() {
-		
 		System.out.println("TestBean class의 생성자 입니다.~");
-		
 	}
 	
-	
-	public int method1() {
-		
+	public void method1() {
 		System.out.println("method1 Call...");
-		
-		return 1000;
+			
 	}
 	
-	
+
 	
 }

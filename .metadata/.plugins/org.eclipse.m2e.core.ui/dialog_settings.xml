@@ -83,6 +83,7 @@
 	</section>
 	<section name="wizardPage">
 		<list key="groupId">
+			<item value="SpringMiniProject"/>
 			<item value="WebSpringSample12_XMLMessageProperties"/>
 			<item value="WebSpringSample09_SessionScopeBeanXML"/>
 			<item value="WebSpringSample08_SessionScopeBean"/>
@@ -97,11 +98,11 @@
 			<item value="SpringSample7_methodDI"/>
 			<item value="WebSpringSample3_parameter"/>
 			<item value="WebSpringSample2_getPost"/>
-			<item value="SpringSample4_BeanLifeCycle"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="SpringMiniProject"/>
 			<item value="WebSpringSample12_XMLMessageProperties"/>
 			<item value="WebSpringSample09_SessionScopeBeanXML"/>
 			<item value="WebSpringSample08_SessionScopeBean"/>
@@ -116,7 +117,6 @@
 			<item value="SpringSample7_methodDI"/>
 			<item value="WebSpringSample3_parameter"/>
 			<item value="WebSpringSample2_getPost"/>
-			<item value="SpringSample4_BeanLifeCycle"/>
 		</list>
 		<list key="version">
 			<item value="0.0.1-SNAPSHOT"/>
