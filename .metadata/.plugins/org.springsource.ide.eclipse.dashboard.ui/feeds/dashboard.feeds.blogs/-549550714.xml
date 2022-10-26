@@ -5,7 +5,41 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2022-10-25T13:55:35Z</updated>
+  <updated>2022-10-26T07:00:00Z</updated>
+  <entry>
+    <title>Spring Tools 4.16.1 released</title>
+    <link rel="alternate" href="https://spring.io/blog/2022/10/26/spring-tools-4-16-1-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Martin Lippert</name>
+    </author>
+    <id>tag:spring.io,2022-10-26:4968</id>
+    <updated>2022-10-26T07:00:00Z</updated>
+    <content type="html">&lt;p&gt;Dear Spring Community,&lt;/p&gt;
+&lt;p&gt;I am happy to announce the 4.16.1 release of the Spring Tools 4 for Eclipse, Visual Studio Code, and Theia.&lt;/p&gt;&lt;h4&gt;&lt;a href="#major-changes-to-the-spring-tools-4-for-eclipse-distribution" class="anchor" name="major-changes-to-the-spring-tools-4-for-eclipse-distribution"&gt;&lt;/a&gt;major changes to the Spring Tools 4 for Eclipse distribution&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;early access builds available for Spring Tools 4 on Eclipse 2022-12 milestones&lt;/li&gt;
+&lt;/ul&gt;&lt;h4&gt;&lt;a href="#important-note-for-upgrading-from-a-release-prior-to-4-16-0-on-eclipse" class="anchor" name="important-note-for-upgrading-from-a-release-prior-to-4-16-0-on-eclipse"&gt;&lt;/a&gt;important note for upgrading from a release prior to 4.16.0 on Eclipse&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;If you are upgrading an existing Spring Tools 4 for Eclipse distribution 4.15.3 or older to 4.16.1, please take a look at the necessary manual &lt;a href="https://github.com/spring-projects/sts4/wiki/Changelog#important-note-for-upgrading-from-a-previous-installation-on-eclipse"&gt;steps described for the upgrade to 4.16.0&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;&lt;h4&gt;&lt;a href="#fixes-and-improvements" class="anchor" name="fixes-and-improvements"&gt;&lt;/a&gt;fixes and improvements&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;(Spring Boot)&lt;/em&gt; fixed: Spring XML Config support does not show symbols with scope &amp;ldquo;File&amp;rdquo; (&lt;a href="https://github.com/spring-projects/sts4/issues/860"&gt;#860&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;(Spring Boot)&lt;/em&gt; fixed: [open-rewrite] exception when executing quick fix for project (&lt;a href="https://github.com/spring-projects/sts4/issues/853"&gt;#853&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;(Spring Boot)&lt;/em&gt; fixed: [refactoring] quick fix to convert autowired field to constructor param shows up even if the constructor param already exists (&lt;a href="https://github.com/spring-projects/sts4/issues/815"&gt;#815&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;(VSCode)&lt;/em&gt; fixed: Vscode Spring Boot Tools 1.39.0 prevents Java project from Running/Debugging (&lt;a href="https://github.com/spring-projects/sts4/issues/847"&gt;#847&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;(Eclipse)&lt;/em&gt; fixed: Web Tools Platform (WTP) validation is activated by default (&lt;a href="https://github.com/spring-projects/sts4/issues/859"&gt;#859&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;(Eclipse)&lt;/em&gt; fixed: ask user to save dirty editors before deploying on docker (&lt;a href="https://github.com/spring-projects/sts4/issues/803"&gt;#803&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To download the distribution for Eclipse and find links to the marketplace entries for Visual Studio Code and Theia, please go visit:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Spring Tools 4: &lt;a href="https://spring.io/tools/"&gt;https://spring.io/tools/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Detailed changes can be found here: &lt;a href="https://github.com/spring-projects/sts4/wiki/Changelog#2022-10-26-4161-release-incl-language-servers-version-1400"&gt;https://github.com/spring-projects/sts4/wiki/Changelog#2022-10-26-4161-release-incl-language-servers-version-1400&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Spring Tools 4.17.0 is scheduled to be released in early December 2022.&lt;/p&gt;
+&lt;p&gt;Enjoy!&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>Spring Integration 6.0.0-RC1 Available</title>
     <link rel="alternate" href="https://spring.io/blog/2022/10/25/spring-integration-6-0-0-rc1-available" />
@@ -808,20 +842,6 @@ This is to ensure Spring WS is running against the latest versions of libraries 
 &lt;p&gt;I would like to thank all contributors who had a role in this release! As we continue&lt;br/&gt;our work on Spring Batch 5, we look forward to your feedback on &lt;a href="https://github.com/spring-projects/spring-batch/issues"&gt;Github&lt;/a&gt;, &lt;a href="https://twitter.com/springbatch"&gt;Twitter&lt;/a&gt; and &lt;a href="https://stackoverflow.com/questions/tagged/spring-batch"&gt;StackOverflow&lt;/a&gt;.&lt;/p&gt;
 &lt;hr/&gt;
 &lt;p&gt;&lt;a href="https://spring.io/projects/spring-batch"&gt;Spring Batch Home&lt;/a&gt;|&lt;a href="https://github.com/spring-projects/spring-batch"&gt;Source on Github&lt;/a&gt;|&lt;a href="https://docs.spring.io/spring-batch/docs/5.0.0-M8/reference/html/index-single.html"&gt;Reference documentation&lt;/a&gt;&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>A Bootiful Podcast: Google mad scientist Josh Suereth on Observability with OpenTelemetry, building better build tools, and so much more</title>
-    <link rel="alternate" href="https://spring.io/blog/2022/10/12/a-bootiful-podcast-google-mad-scientist-josh-suereth-on-observability-with-opentelemetry-building-better-build-tools-and-so-much-more" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2022-10-13:4944</id>
-    <updated>2022-10-13T06:00:00Z</updated>
-    <content type="html">&lt;p&gt;Hi, Spring fans! In this installment, Josh Long (@starbuxman) looks at the latest and greatest in Spring Boot 3 AOT, then talks to Google&amp;rsquo;s Josh Suereth (@jsuereth) about observability with OpenTelemetry, building better build tools, and so much more. &lt;/p&gt;
-&lt;iframe title="Google mad scientist Josh Suereth on Observability with OpenTelemetry, building better build tools, and so much more " allowtransparency="true" height="150" width="100%" style="border: none; min-width: min(100%, 430px);" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/player-v2/?i=jsrsi-12e8472-pb&amp;from=pb6admin&amp;share=1&amp;download=1&amp;rtl=0&amp;fonts=Arial&amp;skin=1&amp;font-color=&amp;logo_link=episode_page&amp;btn-skin=7"&gt;&lt;/iframe&gt;
-&lt;p&gt;Want to learn more about Spring Boot and the wider ecosystem? SpringOne 2022 is almost here! If you want a chance to learn from the source, I hope you¡¯ll join us 6-8 December 2022, right here in my hometown of San Francisco, my favorite west coast city in the USA. (Psst.: If you register now, there¡¯s a $200 discount from the pass price with this code S1VM22_Advocate_200.)&lt;/p&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>

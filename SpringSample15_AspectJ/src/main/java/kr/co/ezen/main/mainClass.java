@@ -4,7 +4,6 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import kr.co.ezen.beans.TestBean;
-import kr.co.ezen.beans2.TestBean3;
 
 /* 
  *AOP(Aspect Oriented Programming)
@@ -166,6 +165,7 @@ public class mainClass {
 		xml1.method1();
 		
 		//Java 방식
+		@SuppressWarnings("resource")
 		AnnotationConfigApplicationContext context2 = new AnnotationConfigApplicationContext(BeanConfigClass.class);
 		
 		TestBean javaBean = context2.getBean(TestBean.class);
