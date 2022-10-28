@@ -11,37 +11,55 @@ public class UserService {
 	
 	@Autowired
 	private UserDAO userDAO;
-	
-	
+	@Autowired
+	private UserDataBean loginUserDataBean;
+		
 	public boolean checkUserIdExist(String user_id) {
 		
-		String user_name= userDAO.checkUserIdExist(user_id);
+		String user_name = userDAO.checkUserIdExist(user_id);
 		
-		if(user_name==null) {
+		if(user_name == null) {
 			return true;
 		}else {
-		return false;
-		}
+			return false;		
+		}			
 	}
-	
 	
 	public void addUserInfo(UserDataBean joinUserDataBean) {
 		
-		userDAO.addUserInfo(joinUserDataBean);
+		userDAO.addUserInfo(joinUserDataBean); 
+	}
+	//
+	public void  getloginUserInfo(UserDataBean tempUserDataBean) {
+		//              
+		UserDataBean tempUserDataBean2 = userDAO.getloginUserInfo(tempUserDataBean);
 		
+		if(tempUserDataBean2 != null) {
+			loginUserDataBean.setUser_idx(tempUserDataBean2.getUser_idx()); 
+			loginUserDataBean.setUser_id(tempUserDataBean2.getUser_id()); 
+			loginUserDataBean.setUser_pw(tempUserDataBean2.getUser_pw());
+			loginUserDataBean.setUser_name(tempUserDataBean2.getUser_name()); 
+			loginUserDataBean.setUserlogin(true);
+		}		
 	}
 	
 	//
-	public void getloginUserInfo(UserDataBean loginUserDataBean) {
-		//                 id + pw
-		UserDataBean loginUserDataBean2 = userDAO.getloginUserInfo(loginUserDataBean);
+	public UserDataBean getModifyUserInfo(UserDataBean modifyUserDataBean) {	
+		UserDataBean tempModifyUserDataBean = userDAO.getModifyUserInfo(loginUserDataBean.getUser_idx());
 		
-		if(loginUserDataBean2 != null) {
-			
-			loginUserDataBean.setUser_id(loginUserDataBean2.getUser_id());
-			loginUserDataBean.setUser_pw(loginUserDataBean2.getUser_pw());
-			
-		}
+		modifyUserDataBean.setUser_id(tempModifyUserDataBean.getUser_id());
+		modifyUserDataBean.setUser_idx(tempModifyUserDataBean.getUser_idx());
+		modifyUserDataBean.setUser_name(tempModifyUserDataBean.getUser_name()); 		
+		
+		return tempModifyUserDataBean; 		
+	}
+	
+	// 비번 수정
+	public void modifyUserInfo(UserDataBean modifyUserDataBean) {
+		modifyUserDataBean.setUser_idx(loginUserDataBean.getUser_idx()); 
+		
+		userDAO.modifyUserInfo(modifyUserDataBean);
+		
 	}
 	
 }

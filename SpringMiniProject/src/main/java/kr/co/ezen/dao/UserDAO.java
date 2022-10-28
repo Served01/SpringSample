@@ -13,20 +13,29 @@ public class UserDAO {
 	private UserMapper userMapper;
 	
 	public String checkUserIdExist(String user_id){
-		
-		return userMapper.checkUserIdExist(user_id);
-		
+				
+		return userMapper.checkUserIdExist(user_id);		
 	}
 	
 	public void addUserInfo(UserDataBean joinUserDataBean) {
 		
-		userMapper.addUserInfo(joinUserDataBean);
+		userMapper.addUserInfo(joinUserDataBean); 
+	}
+	//로그인 정보
+	public UserDataBean  getloginUserInfo(UserDataBean tempUserDataBean) {
 		
+		return userMapper.getloginUserInfo(tempUserDataBean);
 	}
 	
-	public UserDataBean getloginUserInfo(UserDataBean loginUserDataBean) {
+	// 수정 할 정보
+	public UserDataBean getModifyUserInfo(int user_idx) {				
+		return userMapper.getModifyUserInfo(user_idx); 		
+	}
+	
+	// 비번 수정
+	public void modifyUserInfo(UserDataBean modifyUserDataBean) {
+		userMapper.modifyUserInfo(modifyUserDataBean);
 		
-		return userMapper.getloginUserInfo(loginUserDataBean);
 	}
 	
 }

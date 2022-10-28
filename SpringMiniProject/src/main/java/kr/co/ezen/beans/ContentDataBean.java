@@ -1,15 +1,26 @@
 package kr.co.ezen.beans;
 
+import javax.validation.constraints.NotBlank;
+
+import org.springframework.web.multipart.MultipartFile;
+
 // content_table 참조
 public class ContentDataBean {
 
 	private int content_idx;
+	
+	@NotBlank
 	private String content_subject;
+	
+	@NotBlank
 	private String content_text;
 	private String content_file;
 	private int content_write_idx;
 	private int content_board_idx;		       
 	private String content_date;
+	
+	//upload
+	private MultipartFile upload_file;
 	
 	public int getContent_idx() {
 		return content_idx;
@@ -53,9 +64,13 @@ public class ContentDataBean {
 	public void setContent_date(String content_date) {
 		this.content_date = content_date;
 	}
+	public MultipartFile getUpload_file() {
+		return upload_file;
+	}
+	public void setUpload_file(MultipartFile upload_file) {
+		this.upload_file = upload_file;
+	}
 	
-	
-	
-	
+		
 	
 }

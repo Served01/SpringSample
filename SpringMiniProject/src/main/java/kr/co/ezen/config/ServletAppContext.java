@@ -12,6 +12,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.context.support.ReloadableResourceBundleMessageSource;
+import org.springframework.web.multipart.support.StandardServletMultipartResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
@@ -19,6 +20,8 @@ import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry
 import org.springframework.web.servlet.config.annotation.ViewResolverRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
+import kr.co.ezen.beans.UserDataBean;
+import kr.co.ezen.interceptor.CheckLoginInterceptor;
 import kr.co.ezen.interceptor.TopMenuInterceptor;
 import kr.co.ezen.mapper.BoardMapper;
 import kr.co.ezen.mapper.TopMenuMapper;
@@ -32,7 +35,6 @@ import kr.co.ezen.service.TopMenuService;
 @ComponentScan("kr.co.ezen.dao")
 @ComponentScan("kr.co.ezen.service")
 @PropertySource("/WEB-INF/properties/db.properties")
-
 public class ServletAppContext implements WebMvcConfigurer{
 	
 	@Value("${db.classname}") // oracle.jdbc.OracleDriver
@@ -47,8 +49,12 @@ public class ServletAppContext implements WebMvcConfigurer{
 	@Value("${db.password}") // 1234
 	private String db_password;
 	
-	@Autowired
+	@Autowired //call by Type
 	private TopMenuService topMenuService;
+	
+	@Autowired
+	private UserDataBean loginUserDataBean;
+	
 	
 	// Controller.
 	@Override
@@ -68,7 +74,6 @@ public class ServletAppContext implements WebMvcConfigurer{
 	//데이터베이스 접속 정보 관리하는 빈 등록
 	@Bean
 	public BasicDataSource dataSource() {
-		
 		BasicDataSource source = new BasicDataSource();
 		
 		source.setDriverClassName(db_classname); 
@@ -105,19 +110,19 @@ public class ServletAppContext implements WebMvcConfigurer{
 	//TopMenuMapper 등록
 	@Bean
 	public MapperFactoryBean<TopMenuMapper> getTopMenuList(SqlSessionFactory factory){
-		MapperFactoryBean<TopMenuMapper> factoryBean = new MapperFactoryBean<TopMenuMapper>(TopMenuMapper.class);
+		MapperFactoryBean<TopMenuMapper> factoryBean = 
+				new MapperFactoryBean<TopMenuMapper>(TopMenuMapper.class);
 		
 		factoryBean.setSqlSessionFactory(factory); 
-		
+				
 		return factoryBean;		
 	}
-	
-	
 	
 	//UserMapper 등록
 		@Bean
 		public MapperFactoryBean<UserMapper> getUserMapper(SqlSessionFactory factory){
-			MapperFactoryBean<UserMapper> factoryBean = new MapperFactoryBean<UserMapper>(UserMapper.class);
+			MapperFactoryBean<UserMapper> factoryBean = 
+					new MapperFactoryBean<UserMapper>(UserMapper.class);
 			
 			factoryBean.setSqlSessionFactory(factory); 
 			
@@ -132,13 +137,21 @@ public class ServletAppContext implements WebMvcConfigurer{
 	
 	public void addInterceptors(InterceptorRegistry registry) {
 		
-		WebMvcConfigurer.super.addInterceptors(registry);
+		WebMvcConfigurer.super.addInterceptors(registry);	
 		
-		TopMenuInterceptor topMenuInterceptor = new TopMenuInterceptor(topMenuService);
-		
+		TopMenuInterceptor topMenuInterceptor = new TopMenuInterceptor(topMenuService, loginUserDataBean);		
 		InterceptorRegistration registration1 = registry.addInterceptor(topMenuInterceptor);
 			
 		registration1.addPathPatterns("/**");		
+		
+		//CheckLoginInterceptor 등록 : 정보수정, 로그아웃
+		CheckLoginInterceptor checkLoginInterceptor = new CheckLoginInterceptor(loginUserDataBean);
+		
+		InterceptorRegistration registration2 = registry.addInterceptor(checkLoginInterceptor);
+		
+		registration2.addPathPatterns("/user/modify", "/user/logout", "/board/*");// 인터셉서 통과하도록 유도
+		registration2.excludePathPatterns("/board/main"); // 인터셉터 제외
+		
 	}
 	
 	// 두개의 서로다른 properties 설정이 충돌나지 않도록 합니다.
@@ -155,8 +168,15 @@ public class ServletAppContext implements WebMvcConfigurer{
 		res.setBasenames("/WEB-INF/properties/error_message");
 		
 		return res; 
-	}
+	}	
 	
+	//스탠다드서블릿멀티파트리졸버 등록 (upload/download 용도)
+	@Bean
+	public StandardServletMultipartResolver multipartResolver() {
+		
+		return new StandardServletMultipartResolver();
+		
+	}
 }
 
 

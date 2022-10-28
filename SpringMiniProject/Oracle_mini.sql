@@ -68,6 +68,8 @@ delete from user_table;
 
 select * from user_table
 	where user_id ='Hasoyoung' and user_pw='12345678';
+	
+select * from CONTENT_TABLE;
 
 
 
