@@ -22,6 +22,8 @@ public class ContentDataBean {
 	//upload
 	private MultipartFile upload_file;
 	
+	private String content_writer_name; //글쓴사람 추가
+	
 	public int getContent_idx() {
 		return content_idx;
 	}
@@ -70,7 +72,12 @@ public class ContentDataBean {
 	public void setUpload_file(MultipartFile upload_file) {
 		this.upload_file = upload_file;
 	}
-	
+	public String getContent_writer_name() {
+		return content_writer_name;
+	}
+	public void setContent_writer_name(String content_writer_name) {
+		this.content_writer_name = content_writer_name;
+	}
 		
 	
 }

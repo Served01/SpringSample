@@ -22,7 +22,7 @@
 <div class="container" style="margin-top:100px">
 	<div class="card shadow">
 		<div class="card-body">
-			<h4 class="card-title">${boardInfoName}</h4>
+			<h4 class="card-title">${boardInfoName }</h4>
 			<table class="table table-hover" id='board_list'>
 				<thead>
 					<tr>
@@ -33,76 +33,21 @@
 					</tr>
 				</thead>
 				<tbody>
+					<c:forEach var="str" items="${contentlist }">
 					<tr>
-						<td class="text-center d-none d-md-table-cell">10</td>
-						<td><a href='${root }board/read'>글 제목 입니다</a></td>
-						<td class="text-center d-none d-md-table-cell">홍길동</td>
-						<td class="text-center d-none d-md-table-cell">2019-12-12</td>
+						<td class="text-center d-none d-md-table-cell">${str.content_idx }</td>
 						
+						<!-- 어느게시판인가? 1:자바게시판, 2:JSP게시판, 3:spring게시판, 4:프로젝트게시판, 
+										board_info_idx=${board_info_idx}
+							특정 게시판에 몇번째 글인가?	content_idx=${str.content_idx}	
+							
+							http://localhost:8800/SpringMiniProject/board/read?board_info_idx=4&content_idx=5			
+						 -->
+						<td><a href='${root }board/read?board_info_idx=${board_info_idx}&content_idx=${str.content_idx}'>${str.content_subject }</a></td>
+						<td class="text-center d-none d-md-table-cell">${str.content_writer_name }</td>
+						<td class="text-center d-none d-md-table-cell">${str.content_date }</td>						
 					</tr>
-					<tr>
-						<td class="text-center d-none d-md-table-cell">10</td>
-						<td><a href='${root }board/read'>글 제목 입니다</a></td>
-						<td class="text-center d-none d-md-table-cell">홍길동</td>
-						<td class="text-center d-none d-md-table-cell">2019-12-12</td>
-						
-					</tr>
-					<tr>
-						<td class="text-center d-none d-md-table-cell">10</td>
-						<td><a href='${root }board/read'>글 제목 입니다</a></td>
-						<td class="text-center d-none d-md-table-cell">홍길동</td>
-						<td class="text-center d-none d-md-table-cell">2019-12-12</td>
-						
-					</tr>
-					<tr>
-						<td class="text-center d-none d-md-table-cell">10</td>
-						<td><a href='${root }board/read'>글 제목 입니다</a></td>
-						<td class="text-center d-none d-md-table-cell">홍길동</td>
-						<td class="text-center d-none d-md-table-cell">2019-12-12</td>
-						
-					</tr>
-					<tr>
-						<td class="text-center d-none d-md-table-cell">10</td>
-						<td><a href='${root }board/read'>글 제목 입니다</a></td>
-						<td class="text-center d-none d-md-table-cell">홍길동</td>
-						<td class="text-center d-none d-md-table-cell">2019-12-12</td>
-						
-					</tr>
-					<tr>
-						<td class="text-center d-none d-md-table-cell">10</td>
-						<td><a href='${root }board/read'>글 제목 입니다</a></td>
-						<td class="text-center d-none d-md-table-cell">홍길동</td>
-						<td class="text-center d-none d-md-table-cell">2019-12-12</td>
-						
-					</tr>
-					<tr>
-						<td class="text-center d-none d-md-table-cell">10</td>
-						<td><a href='${root }board/read'>글 제목 입니다</a></td>
-						<td class="text-center d-none d-md-table-cell">홍길동</td>
-						<td class="text-center d-none d-md-table-cell">2019-12-12</td>
-						
-					</tr>
-					<tr>
-						<td class="text-center d-none d-md-table-cell">10</td>
-						<td><a href='${root }board/read'>글 제목 입니다</a></td>
-						<td class="text-center d-none d-md-table-cell">홍길동</td>
-						<td class="text-center d-none d-md-table-cell">2019-12-12</td>
-						
-					</tr>
-					<tr>
-						<td class="text-center d-none d-md-table-cell">10</td>
-						<td><a href='${root }board/read'>글 제목 입니다</a></td>
-						<td class="text-center d-none d-md-table-cell">홍길동</td>
-						<td class="text-center d-none d-md-table-cell">2019-12-12</td>
-						
-					</tr>
-					<tr>
-						<td class="text-center d-none d-md-table-cell">10</td>
-						<td><a href='${root }board/read'>글 제목 입니다</a></td>
-						<td class="text-center d-none d-md-table-cell">홍길동</td>
-						<td class="text-center d-none d-md-table-cell">2019-12-12</td>
-						
-					</tr>
+					</c:forEach>
 				</tbody>
 			</table>
 			

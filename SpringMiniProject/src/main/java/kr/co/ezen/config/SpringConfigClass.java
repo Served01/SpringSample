@@ -42,7 +42,7 @@ public class SpringConfigClass extends AbstractAnnotationConfigDispatcherServlet
 		
 		super.customizeRegistration(registration);
 		
-		//5mb 정도 이미지를 올릴 수 있다는 의미이다.
+		//5MB 정도 이미지를 올릴 수 있다는 의미이다.
 		MultipartConfigElement configElement = new MultipartConfigElement(null, 1024*1024*5, 1024*1024*5, 0);
 		registration.setMultipartConfig(configElement);
 		
