@@ -20611,3 +20611,198 @@ org.eclipse.core.runtime.CoreException: Launch configuration mainClass (10) refe
 2022-10-28 15:03:03,194 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringMiniProject\src\main\resources
 2022-10-28 15:03:03,195 [Worker-21: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
 2022-10-28 15:03:03,195 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringMiniProject\src\test\resources
+2022-10-31 08:10:24,301 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2022-10-31 08:10:37,260 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.hibernate:hibernate-validator:jar:6.2.1.Final has been relocated to org.hibernate.validator:hibernate-validator:jar:6.2.1.Final
+2022-10-31 08:10:37,994 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:37,995 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringMiniProject\src\main\resources
+2022-10-31 08:10:37,998 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:37,999 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringMiniProject\src\test\resources
+2022-10-31 08:10:39,593 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:39,609 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-10-31 08:10:39,611 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:39,611 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-10-31 08:10:39,915 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:39,916 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringSample02_insaXML\src\main\resources
+2022-10-31 08:10:39,917 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:39,918 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringSample02_insaXML\src\test\resources
+2022-10-31 08:10:40,020 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:40,021 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-10-31 08:10:40,022 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:40,023 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-10-31 08:10:40,090 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:40,091 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringSample04_BeanLifeCycle\src\main\resources
+2022-10-31 08:10:40,092 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:40,093 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringSample04_BeanLifeCycle\src\test\resources
+2022-10-31 08:10:40,170 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:40,171 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringSample05_BeanLifeCycle2\src\main\resources
+2022-10-31 08:10:40,172 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:40,172 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringSample05_BeanLifeCycle2\src\test\resources
+2022-10-31 08:10:40,268 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:40,269 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringSample06_BeanPostProcessor\src\main\resources
+2022-10-31 08:10:40,269 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:40,270 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringSample06_BeanPostProcessor\src\test\resources
+2022-10-31 08:10:40,342 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:40,343 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringSample07_MethodDI\src\main\resources
+2022-10-31 08:10:40,344 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:40,345 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringSample07_MethodDI\src\test\resources
+2022-10-31 08:10:40,419 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:40,420 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringSample08_ConstructorDI\src\main\resources
+2022-10-31 08:10:40,422 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:40,424 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringSample08_ConstructorDI\src\test\resources
+2022-10-31 08:10:40,723 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:40,724 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringSample09_CollectionDI\src\main\resources
+2022-10-31 08:10:40,726 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:40,726 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringSample09_CollectionDI\src\test\resources
+2022-10-31 08:10:40,833 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:40,834 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringSample10_AutoWired\src\main\resources
+2022-10-31 08:10:40,834 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:40,835 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringSample10_AutoWired\src\test\resources
+2022-10-31 08:10:40,994 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:40,994 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringSample11_JavaAutowired\src\main\resources
+2022-10-31 08:10:40,995 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:40,995 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringSample11_JavaAutowired\src\test\resources
+2022-10-31 08:10:41,161 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:41,162 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringSample12_AnnotationBean\src\main\resources
+2022-10-31 08:10:41,165 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:41,165 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringSample12_AnnotationBean\src\test\resources
+2022-10-31 08:10:41,292 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:41,296 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringSample13_JSR250Annotation\src\main\resources
+2022-10-31 08:10:41,297 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:41,297 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringSample13_JSR250Annotation\src\test\resources
+2022-10-31 08:10:41,441 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:41,441 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringSample14_AOP\src\main\resources
+2022-10-31 08:10:41,442 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:41,443 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringSample14_AOP\src\test\resources
+2022-10-31 08:10:41,581 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:41,583 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringSample15_AspectJ\src\main\resources
+2022-10-31 08:10:41,586 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:41,587 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringSample15_AspectJ\src\test\resources
+2022-10-31 08:10:41,901 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.hibernate:hibernate-validator:jar:6.2.1.Final has been relocated to org.hibernate.validator:hibernate-validator:jar:6.2.1.Final
+2022-10-31 08:10:41,938 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:41,938 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\WebSpringSample01_URLMapping\src\main\resources
+2022-10-31 08:10:41,940 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:41,940 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\WebSpringSample01_URLMapping\src\test\resources
+2022-10-31 08:10:42,179 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.hibernate:hibernate-validator:jar:6.2.1.Final has been relocated to org.hibernate.validator:hibernate-validator:jar:6.2.1.Final
+2022-10-31 08:10:42,188 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:42,188 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\WebSpringSample02_getPost\src\main\resources
+2022-10-31 08:10:42,190 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:42,190 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\WebSpringSample02_getPost\src\test\resources
+2022-10-31 08:10:42,352 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.hibernate:hibernate-validator:jar:6.2.1.Final has been relocated to org.hibernate.validator:hibernate-validator:jar:6.2.1.Final
+2022-10-31 08:10:42,359 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:42,360 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\WebSpringSample03_parameter\src\main\resources
+2022-10-31 08:10:42,361 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:42,361 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\WebSpringSample03_parameter\src\test\resources
+2022-10-31 08:10:42,512 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.hibernate:hibernate-validator:jar:6.2.1.Final has been relocated to org.hibernate.validator:hibernate-validator:jar:6.2.1.Final
+2022-10-31 08:10:42,519 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:42,519 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\WebSpringSample04_formCustomTag\src\main\resources
+2022-10-31 08:10:42,520 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:42,521 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\WebSpringSample04_formCustomTag\src\test\resources
+2022-10-31 08:10:42,691 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.hibernate:hibernate-validator:jar:6.2.1.Final has been relocated to org.hibernate.validator:hibernate-validator:jar:6.2.1.Final
+2022-10-31 08:10:42,698 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:42,699 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\WebSpringSample04_formCustomTag2\src\main\resources
+2022-10-31 08:10:42,701 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:42,701 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\WebSpringSample04_formCustomTag2\src\test\resources
+2022-10-31 08:10:42,932 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.hibernate:hibernate-validator:jar:6.2.1.Final has been relocated to org.hibernate.validator:hibernate-validator:jar:6.2.1.Final
+2022-10-31 08:10:42,938 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:42,939 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\WebSpringSample05_RedirectForward\src\main\resources
+2022-10-31 08:10:42,940 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:42,940 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\WebSpringSample05_RedirectForward\src\test\resources
+2022-10-31 08:10:43,087 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.hibernate:hibernate-validator:jar:6.2.1.Final has been relocated to org.hibernate.validator:hibernate-validator:jar:6.2.1.Final
+2022-10-31 08:10:43,093 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:43,094 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\WebSpringSample06_requestScope\src\main\resources
+2022-10-31 08:10:43,095 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:43,095 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\WebSpringSample06_requestScope\src\test\resources
+2022-10-31 08:10:43,207 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.hibernate:hibernate-validator:jar:6.2.1.Final has been relocated to org.hibernate.validator:hibernate-validator:jar:6.2.1.Final
+2022-10-31 08:10:43,222 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:43,222 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\WebSpringSample07_SessionScope\src\main\resources
+2022-10-31 08:10:43,222 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:43,238 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\WebSpringSample07_SessionScope\src\test\resources
+2022-10-31 08:10:43,436 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.hibernate:hibernate-validator:jar:6.2.1.Final has been relocated to org.hibernate.validator:hibernate-validator:jar:6.2.1.Final
+2022-10-31 08:10:43,443 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:43,444 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\WebSpringSample08_SessionScopeBean\src\main\resources
+2022-10-31 08:10:43,444 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:43,445 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\WebSpringSample08_SessionScopeBean\src\test\resources
+2022-10-31 08:10:43,586 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.hibernate:hibernate-validator:jar:6.2.1.Final has been relocated to org.hibernate.validator:hibernate-validator:jar:6.2.1.Final
+2022-10-31 08:10:43,592 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:43,593 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\WebSpringSample09_SessionScopeBeanXML\src\main\resources
+2022-10-31 08:10:43,593 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:43,594 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\WebSpringSample09_SessionScopeBeanXML\src\test\resources
+2022-10-31 08:10:43,726 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.hibernate:hibernate-validator:jar:6.2.1.Final has been relocated to org.hibernate.validator:hibernate-validator:jar:6.2.1.Final
+2022-10-31 08:10:43,733 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:43,733 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\WebSpringSample10_Properties\src\main\resources
+2022-10-31 08:10:43,734 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:43,734 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\WebSpringSample10_Properties\src\test\resources
+2022-10-31 08:10:43,900 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.hibernate:hibernate-validator:jar:6.2.1.Final has been relocated to org.hibernate.validator:hibernate-validator:jar:6.2.1.Final
+2022-10-31 08:10:43,907 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:43,908 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\WebSpringSample11_MessageProperties\src\main\resources
+2022-10-31 08:10:43,908 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:43,909 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\WebSpringSample11_MessageProperties\src\test\resources
+2022-10-31 08:10:44,025 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.hibernate:hibernate-validator:jar:6.2.1.Final has been relocated to org.hibernate.validator:hibernate-validator:jar:6.2.1.Final
+2022-10-31 08:10:44,031 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:44,031 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\WebSpringSample12_XMLMessageProperties\src\main\resources
+2022-10-31 08:10:44,032 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:44,032 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\WebSpringSample12_XMLMessageProperties\src\test\resources
+2022-10-31 08:10:44,197 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.hibernate:hibernate-validator:jar:6.2.1.Final has been relocated to org.hibernate.validator:hibernate-validator:jar:6.2.1.Final
+2022-10-31 08:10:44,214 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:44,214 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\WebSpringSample13_validationCheck\src\main\resources
+2022-10-31 08:10:44,215 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:44,215 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\WebSpringSample13_validationCheck\src\test\resources
+2022-10-31 08:10:44,368 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.hibernate:hibernate-validator:jar:6.2.1.Final has been relocated to org.hibernate.validator:hibernate-validator:jar:6.2.1.Final
+2022-10-31 08:10:44,374 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:44,374 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\WebSpringSample14_ErrorMessageCustermarizing\src\main\resources
+2022-10-31 08:10:44,375 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:44,375 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\WebSpringSample14_ErrorMessageCustermarizing\src\test\resources
+2022-10-31 08:10:44,533 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.hibernate:hibernate-validator:jar:6.2.1.Final has been relocated to org.hibernate.validator:hibernate-validator:jar:6.2.1.Final
+2022-10-31 08:10:44,539 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:44,540 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\WebSpringSample15_JSR-303ErrorMessageCustermarizing2\src\main\resources
+2022-10-31 08:10:44,541 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:10:44,541 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\WebSpringSample15_JSR-303ErrorMessageCustermarizing2\src\test\resources
+2022-10-31 08:51:09,994 [Worker-24: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.hibernate:hibernate-validator:jar:6.2.1.Final has been relocated to org.hibernate.validator:hibernate-validator:jar:6.2.1.Final
+2022-10-31 08:51:10,010 [Worker-24: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:51:10,011 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringMiniProject\src\main\resources
+2022-10-31 08:51:10,013 [Worker-24: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 08:51:10,013 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringMiniProject\src\test\resources
+2022-10-31 09:02:50,289 [Worker-33: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 09:02:50,289 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringMiniProject\src\main\resources
+2022-10-31 09:02:50,290 [Worker-33: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 09:02:50,290 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringMiniProject\src\test\resources
+2022-10-31 09:04:05,917 [Worker-35: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 09:04:05,918 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringMiniProject\src\main\resources
+2022-10-31 09:04:05,918 [Worker-35: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 09:04:05,919 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringMiniProject\src\test\resources
+2022-10-31 09:04:31,589 [Worker-31: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 09:04:31,589 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringMiniProject\src\main\resources
+2022-10-31 09:04:31,590 [Worker-31: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 09:04:31,590 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringMiniProject\src\test\resources
+2022-10-31 09:04:51,053 [Worker-33: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 09:04:51,054 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringMiniProject\src\main\resources
+2022-10-31 09:04:51,054 [Worker-33: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 09:04:51,055 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringMiniProject\src\test\resources
+2022-10-31 09:05:32,869 [Worker-33: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 09:05:32,869 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringMiniProject\src\main\resources
+2022-10-31 09:05:32,870 [Worker-33: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 09:05:32,870 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringMiniProject\src\test\resources
+2022-10-31 09:06:38,334 [Worker-33: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 09:06:38,334 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringMiniProject\src\main\resources
+2022-10-31 09:06:38,335 [Worker-33: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 09:06:38,335 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringMiniProject\src\test\resources
+2022-10-31 09:06:57,893 [Worker-33: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 09:06:57,893 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringMiniProject\src\main\resources
+2022-10-31 09:06:57,894 [Worker-33: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 09:06:57,894 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringMiniProject\src\test\resources
+2022-10-31 09:07:46,463 [Worker-31: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 09:07:46,464 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringMiniProject\src\main\resources
+2022-10-31 09:07:46,465 [Worker-31: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 09:07:46,465 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringMiniProject\src\test\resources
+2022-10-31 09:08:14,815 [Worker-33: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 09:08:14,815 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringMiniProject\src\main\resources
+2022-10-31 09:08:14,816 [Worker-33: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 09:08:14,816 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringMiniProject\src\test\resources
+2022-10-31 09:08:41,647 [Worker-35: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 09:08:41,647 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringMiniProject\src\main\resources
+2022-10-31 09:08:41,648 [Worker-35: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 09:08:41,648 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringMiniProject\src\test\resources
+2022-10-31 09:12:02,705 [Worker-39: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 09:12:02,707 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringMiniProject\src\main\resources
+2022-10-31 09:12:02,707 [Worker-39: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-10-31 09:12:02,708 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Student\Springworkspace\SpringMiniProject\src\test\resources
