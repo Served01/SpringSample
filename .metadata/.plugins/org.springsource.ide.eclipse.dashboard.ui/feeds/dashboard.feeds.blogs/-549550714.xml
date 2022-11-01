@@ -5,7 +5,37 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2022-10-31T17:04:00Z</updated>
+  <updated>2022-11-01T01:00:00Z</updated>
+  <entry>
+    <title>This Week in Spring - November 1st, 2022</title>
+    <link rel="alternate" href="https://spring.io/blog/2022/10/31/this-week-in-spring-november-1st-2022" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2022-10-31:4975</id>
+    <updated>2022-11-01T01:00:00Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! How&amp;rsquo;re you doin&amp;rsquo;? I hope you&amp;rsquo;re doing well and had a great Halloween if you celebrate. I&amp;rsquo;m doing great. I&amp;rsquo;m in sunny Kuala Lumpur, Malaysia, eating delicious food and hanging out with amazing people. Tomorrow, I&amp;rsquo;m off to Penang, Malaysia, for a little tourism before I get back to a more code-driven kinda fun: I&amp;rsquo;ll be &lt;a href="https://kubernetes-native-java-josh-long-developerkaki.peatix.com/"&gt;doing a developer event looking at the latest-and-greatest from Spring Boot 3&lt;/a&gt; here in &lt;strong&gt;Kuala Lumpur&lt;/strong&gt; on the 11th of November - ten short days from now! - so please join me!&lt;/p&gt;
+&lt;p&gt;Also, I just joined &lt;em&gt;Mastodon&lt;/em&gt; - a decentralized and open-source Twitter; I&amp;rsquo;m not leaving Twitter, of course, but I would love to make new friends and grow the community there: &lt;a href="https://mastodon.online/@starbuxman"&gt;@starbuxman@mastodon.online&lt;/a&gt;! &lt;/p&gt;
+&lt;p&gt;Anyway, my friends, housekeeping aside, we&amp;rsquo;ve got a &lt;em&gt;ton&lt;/em&gt; of amazing things to talk about today so let&amp;rsquo;s dive right into it!&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=qkgdjIsNYA0"&gt;Automated Code Migrations With Spring Boot Migrator | Fabian Krueger (EN)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/10/27/bootiful-podcast-spring-mad-scientist-andy-clement-on-springone-2022-aot-azure-spring-apps-and-more"&gt;Bootiful Podcast: Spring Mad Scientist Andy Clement on SpringOne 2022, AOT, Azure Spring Apps, and more&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://feeds.feedblitz.com/~/717387970/0/baeldung~How-to-Access-the-First-Element-of-a-Flux"&gt;How to Access the First Element of a Flux&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/alina_yurenko/status/1587102593851052032?s=61&amp;t=ahaeq7OhMUteRPzmYqDtKA"&gt;I wondered out loud if anybody heard elevaor music when they were waiting for their GraalVM compiles to finish. Then this happened. LOL&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://feeds.feedblitz.com/~/717425390/0/baeldung~Limiting-the-Requests-per-Second-With-WebClient"&gt;Limiting the Requests per Second With WebClient&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://feeds.feedblitz.com/~/717449636/0/baeldung~Log-Properties-in-a-Spring-Boot-Application"&gt;Log Properties in a Spring Boot Application&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Interested in how GraalVm will fit into the OpenJDK model? &lt;a href="https://openjdk.org/projects/leyden/notes/02-shift-and-constrain"&gt;Selectively Shifting and Constraining Computation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://qiita.com/suke_masa/items/8c879c9b20a07d7489a8"&gt;Spring Boot + MyBatis ªÇí»íÂ TypeHandler ªòÞÅª¦ - Qiita&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/10/25/spring-integration-6-0-0-rc1-available"&gt;Spring Integration 6.0.0-RC1 Available&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://qiita.com/kazuki43zoo/items/489cdd01de28dd647681"&gt;Spring Integration ªÎ TCP Ñ¦ÒöªÎ«Ç«·«ê«¢«é«¤«ºãÁªË«¿«¤«à«¢«¦«Èªòò¦ïÒª¹ªë - Qiita&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=iJ2muJniikY"&gt;Spring Security, demystified by Daniel Garnier Moiroux&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/10/26/spring-tools-4-16-1-released"&gt;Spring Tools 4.16.1 released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Check out my Devoxx UK talk, also voted one of the top videos at Devoxx UK: &lt;a href="https://www.youtube.com/watch?v=2Wnp6FdrTbI"&gt;Spring.next by Josh Long&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://feeds.feedblitz.com/~/717085636/0/baeldung~TLS-Setup-in-MySQL-and-Spring-Boot-Application"&gt;TLS Setup in MySQL and Spring Boot Application&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>Spring Security 5.7.5 and 5.6.9 available now</title>
     <link rel="alternate" href="https://spring.io/blog/2022/10/31/spring-security-5-7-5-and-5-6-9-available-now" />
@@ -1171,24 +1201,6 @@ This is to ensure Spring WS is running against the latest versions of libraries 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring for GraphQL 1.1.0-RC1 released</title>
-    <link rel="alternate" href="https://spring.io/blog/2022/10/18/spring-for-graphql-1-1-0-rc1-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Brian Clozel</name>
-    </author>
-    <id>tag:spring.io,2022-10-18:4950</id>
-    <updated>2022-10-18T16:40:00Z</updated>
-    <content type="html">&lt;p&gt;I&amp;rsquo;m pleased to announce that the first release candidate of Spring for GraphQL 1.1.0 is now available from our &lt;a href="https://repo.spring.io/milestone"&gt;Milestone repository&lt;/a&gt;. This version will be shipped with Spring Boot 3.0.0-RC1 due for release later this week.&lt;/p&gt;
-&lt;p&gt;This release candidate is the last stop for shipping new features; from that point, we&amp;rsquo;ll be focusing on bug fixes and documentation improvements. Our goal is to stabilize the current branch for &lt;a href="https://github.com/spring-projects/spring-graphql/milestone/14"&gt;our GA release scheduled next month&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;With RC1, we&amp;rsquo;re shipping our new Observability support in Spring for GraphQL. Based on the &lt;a href="https://spring.io/blog/2022/10/12/observability-with-spring-boot-3"&gt;new Micrometer Observation work&lt;/a&gt;, this infrastructure replaces &lt;a href="https://docs.spring.io/spring-boot/docs/current/reference/html/actuator.html#actuator.metrics.supported.spring-graphql"&gt;the former GraphQL Metrics support in Spring Boot 2.7&lt;/a&gt;. GraphQL is a good use case for Observability in general, as the GraphQL engine can distribute the data fetching operations over caches, databases, REST APIs and more. It&amp;rsquo;s important not only to keep track of performance metrics for your GraphQL API, but also to be able to explore traces and investigate production issues.&lt;/p&gt;
-&lt;p&gt;We didn&amp;rsquo;t have time to tackle features like &lt;a href="https://github.com/spring-projects/spring-graphql/issues/103"&gt;Pagination/Relay&lt;/a&gt; or &lt;a href="https://github.com/spring-projects/spring-graphql/issues/495"&gt;AOT/Native support&lt;/a&gt;, but we&amp;rsquo;re listening to the community. We&amp;rsquo;re working on our roadmap for the next feature version, so now is the time to vote on existing issues to show your interest!&lt;/p&gt;
-&lt;p&gt;The annual &lt;a href="https://spring.io/survey"&gt;Spring survey is here&lt;/a&gt;, it&amp;rsquo;s a great way to let us know what you think!&lt;/p&gt;&lt;h3&gt;&lt;a href="#how-can-you-help" class="anchor" name="how-can-you-help"&gt;&lt;/a&gt;How can you help?&lt;/h3&gt;
-&lt;p&gt;If you have general questions, please ask on &lt;a href="https://stackoverflow.com"&gt;stackoverflow.com&lt;/a&gt; using the &lt;a href="https://stackoverflow.com/tags/spring-graphql"&gt;&lt;code&gt;spring-graphql&lt;/code&gt; tag&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://spring.io/projects/spring-graphql/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-graphql"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-graphql/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-graphql/docs/1.1.0-RC1/reference/html"&gt;Documentation&lt;/a&gt; | &lt;a href="https://stackoverflow.com/questions/tagged/spring-graphql"&gt;Stack Overflow&lt;/a&gt;&lt;/p&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>

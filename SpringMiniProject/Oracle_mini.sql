@@ -63,6 +63,7 @@ select * from USER_TABLE;
 
 insert into user_table values(1, '홍길동', 'hong1234', '12345678');
 insert into user_table values(2, '임성찬', 'lim12345', '12345678');
+insert into user_table values(2, '임성찬', 'lim12345', '12345678');
 
 delete from user_table;
 
