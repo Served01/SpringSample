@@ -16,7 +16,6 @@ public interface BoardMapper {
 			+ " content_board_idx, content_date)"
 			+ " values(content_seq.nextval, #{content_subject}, #{content_text}, #{content_file}, "
 			+ "#{content_write_idx}, #{content_board_idx}, sysdate)")
-	
 	void addContentInfo(ContentDataBean writeContentDataBean);
 	
 	@Select("select board_info_name from board_info_table where board_info_idx = #{board_info_idx}")
@@ -28,7 +27,7 @@ public interface BoardMapper {
 			 "where  c.content_write_idx = u.user_idx " +
 			 "and c.content_board_idx = #{board_info_idx} " +
 			 "order by c.content_idx desc")	
-		List<ContentDataBean> getContentList(int board_info_idx);
+	List<ContentDataBean> getContentList(int board_info_idx);
 	
 	// 저자이름, 작성날짜, 내용, 이미지 등을 추출하여 가져와야 합니다.	
 	@Select("select  u1.user_name as content_writer_name, " +
