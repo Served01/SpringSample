@@ -17,7 +17,7 @@ public class CheckLoginInterceptor implements HandlerInterceptor{
 		this.loginUserDataBean = loginUserDataBean;		
 	}
 	
-	@Override
+	@Override //login이 안되었으면 false, 로그인이면 true
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
 			throws Exception {
 		
@@ -27,8 +27,7 @@ public class CheckLoginInterceptor implements HandlerInterceptor{
 			response.sendRedirect(contextPath + "/user/not_login");
 		
 			return false;
-		}
-			
+		}			
 		return true;
 	}
 }

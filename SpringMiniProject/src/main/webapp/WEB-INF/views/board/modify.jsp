@@ -1,7 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>       
-<c:url var='root' value='/'/>     
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>  
+<c:url var='root' value='/'/>  
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,35 +23,41 @@
 		<div class="col-sm-6">
 			<div class="card shadow">
 				<div class="card-body">
-					<form action="${root }board/read" method="get">
+					<form:form action="${root }board/modify_pro" method="post" modelAttribute="modifyContentDataBean" enctype="multipart/form-data">
+						<form:hidden path="content_idx"/>
+						<form:hidden path="content_board_idx"/>
+						<input type="hidden" name="page" value="${page }"/>
 						<div class="form-group">
-							<label for="board_writer_name">작성자</label>
-							<input type="text" id="board_writer_name" name="board_writer_name" class="form-control" value="홍길동" disabled="disabled"/>
+							<form:label path="content_writer_name">작성자</form:label>
+							<form:input path="content_writer_name" class="form-control" readonly="true"/>
 						</div>
 						<div class="form-group">
-							<label for="board_date">작성날짜</label>
-							<input type="text" id="board_date" name="board_date" class="form-control" value="2018-7-20" disabled="disabled"/>
+							<form:label path="content_date">작성날짜</form:label>
+							<form:input path="content_date" class="form-control" readonly="true"/>
 						</div>
 						<div class="form-group">
-							<label for="board_subject">제목</label>
-							<input type="text" id="board_subject" name="board_subject" class="form-control" value="제목입니다"/>
+							<form:label path="content_subject">제목</form:label>
+							<form:input path="content_subject" class="form-control"/>
+							<form:errors path="content_subject" style="color:red"></form:errors>
 						</div>
 						<div class="form-group">
-							<label for="board_content">내용</label>
-							<textarea id="board_content" name="board_content" class="form-control" rows="10" style="resize:none">본문입니다</textarea>
+							<form:label path="content_text">내용</form:label>
+							<form:textarea path="content_text" class="form-control" rows="10" style="resize:none"/>
 						</div>
 						<div class="form-group">
-							<label for="board_file">첨부 이미지</label>
-							<img src="image/bmwmodel_205.png" width="100%"/>	
-							<input type="file" name="board_file" id="board_file" class="form-control" accept="image/*"/>					
+							<form:label path="content_file">첨부 이미지</form:label>
+							<c:if test="${modifyContentDataBean.content_file != null }">
+							<img src="${root }upload/${modifyContentDataBean.content_file}" width="100%"/>	
+							</c:if>
+							<form:input path="upload_file" type="file" class="form-control" accept="image/*"/>					
 						</div>
 						<div class="form-group">
 							<div class="text-right">
 								<button type="submit" class="btn btn-primary">수정완료</button>
-								<a href="${root }board/read" class="btn btn-info">취소</a>
+								<a href="${root }read?board_info_idx=${board_info_idx}&content_idx=${content_idx}&page=${page}" class="btn btn-info">취소</a>
 							</div>
 						</div>
-					</form>
+					</form:form>
 				</div>
 			</div>
 		</div>

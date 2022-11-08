@@ -14,10 +14,8 @@ public class UserService {
 	@Autowired
 	private UserDataBean loginUserDataBean;
 		
-	public boolean checkUserIdExist(String user_id) {
-		
-		String user_name = userDAO.checkUserIdExist(user_id);
-		
+	public boolean checkUserIdExist(String user_id) {		
+		String user_name = userDAO.checkUserIdExist(user_id);		
 		if(user_name == null) {
 			return true;
 		}else {
@@ -25,13 +23,11 @@ public class UserService {
 		}			
 	}
 	
-	public void addUserInfo(UserDataBean joinUserDataBean) {
-		
+	public void addUserInfo(UserDataBean joinUserDataBean) {		
 		userDAO.addUserInfo(joinUserDataBean); 
 	}
 	//
-	public void  getloginUserInfo(UserDataBean tempUserDataBean) {
-		//              
+	public void  getloginUserInfo(UserDataBean tempUserDataBean) {             
 		UserDataBean tempUserDataBean2 = userDAO.getloginUserInfo(tempUserDataBean);
 		
 		if(tempUserDataBean2 != null) {
@@ -51,7 +47,7 @@ public class UserService {
 		modifyUserDataBean.setUser_idx(tempModifyUserDataBean.getUser_idx());
 		modifyUserDataBean.setUser_name(tempModifyUserDataBean.getUser_name()); 		
 		
-		return tempModifyUserDataBean; 		
+		return modifyUserDataBean; 		
 	}
 	
 	// 비번 수정
@@ -61,5 +57,17 @@ public class UserService {
 		userDAO.modifyUserInfo(modifyUserDataBean);
 		
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 }

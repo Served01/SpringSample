@@ -5,6 +5,7 @@ import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.servlet.HandlerInterceptor;
 
 import kr.co.ezen.beans.BoardInfoBean;
@@ -19,8 +20,8 @@ import kr.co.ezen.service.TopMenuService;
  */
 public class TopMenuInterceptor implements HandlerInterceptor{
 	
-
 	private TopMenuService topMenuService;
+	@SuppressWarnings("unused")
 	private UserDataBean loginUserDataBean;
 	
 	// 인터넵터에서는 자동 주입이 안되므로 생성자를 이용하여 객체가 생성될 때
@@ -29,7 +30,6 @@ public class TopMenuInterceptor implements HandlerInterceptor{
 		this.topMenuService = topMenuService;
 		this.loginUserDataBean = loginUserDataBean;		
 	}
-
 
 	@Override
 		public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)

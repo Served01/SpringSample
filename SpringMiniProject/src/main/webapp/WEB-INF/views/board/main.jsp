@@ -43,7 +43,7 @@
 							
 							http://localhost:8800/SpringMiniProject/board/read?board_info_idx=4&content_idx=5			
 						 -->
-						<td><a href='${root }board/read?board_info_idx=${board_info_idx}&content_idx=${str.content_idx}'>${str.content_subject }</a></td>
+						<td><a href='${root }board/read?board_info_idx=${board_info_idx}&content_idx=${str.content_idx}&page=${page}'>${str.content_subject }</a></td>
 						<td class="text-center d-none d-md-table-cell">${str.content_writer_name }</td>
 						<td class="text-center d-none d-md-table-cell">${str.content_date }</td>						
 					</tr>
@@ -53,56 +53,55 @@
 			
 			<div class="d-none d-md-block">
 				<ul class="pagination justify-content-center">
-					<li class="page-item">
-						<a href="#" class="page-link">이전</a>
-					</li>
-					<li class="page-item">
-						<a href="#" class="page-link">1</a>
-					</li>
-					<li class="page-item">
-						<a href="#" class="page-link">2</a>
-					</li>
-					<li class="page-item">
-						<a href="#" class="page-link">3</a>
-					</li>
-					<li class="page-item">
-						<a href="#" class="page-link">4</a>
-					</li>
-					<li class="page-item">
-						<a href="#" class="page-link">5</a>
-					</li>
-					<li class="page-item">
-						<a href="#" class="page-link">6</a>
-					</li>
-					<li class="page-item">
-						<a href="#" class="page-link">7</a>
-					</li>
-					<li class="page-item">
-						<a href="#" class="page-link">8</a>
-					</li>
-					<li class="page-item">
-						<a href="#" class="page-link">9</a>
-					</li>
-					<li class="page-item">
-						<a href="#" class="page-link">10</a>
-					</li>
-					<li class="page-item">
-						<a href="#" class="page-link">다음</a>
-					</li>
+					<c:choose>
+						<c:when test="${pageCountBean.prevPage <= 0 }">
+							<li class="page-item disabled">
+								<a href="#" class="page-link">이전</a>
+							</li>
+						</c:when>
+					<c:otherwise>
+						<li class="page-item">
+						<a href="${root}board/main?board_info_idx=${board_info_idx}&page=${pageCountBean.prevPage}" class="page-link">이전</a>
+						</li>					
+					</c:otherwise>					
+					</c:choose>
+														
+					<c:forEach var="idx" begin="${pageCountBean.min }" end="${pageCountBean.max }">
+						<c:choose>
+							<c:when test="$idx == pageCountBean.currentPage">
+							<li class="page-item active">
+								<a href="${root}board/main?board_info_idx=${board_info_idx}&page=${idx}" class="page-link">${idx}</a>
+							</li>		
+						</c:when>
+						
+						<c:otherwise>
+							<li class="page-item">
+								<a href="${root}board/main?board_info_idx=${board_info_idx}&page=${idx}" class="page-link">${idx}</a>
+							</li>						
+						</c:otherwise>						
+						</c:choose>									
+					</c:forEach>					
+					
+					<c:choose>
+						<c:when test="${pageCountBean.max >= pageCountBean.pageCnt}">
+							<li class="page-item disabled">
+								<a href="#" class="page-link">다음</a>
+							</li>
+						</c:when>
+					
+					<c:otherwise>
+						<li class="page-item">
+							<a href="${root}board/main?board_info_idx=${board_info_idx}&page=${pageCountBean.nextPage}" class="page-link">다음</a>
+						</li>
+					</c:otherwise>
+					</c:choose>
 				</ul>
 			</div>
 			
-			<div class="d-block d-md-none">
-				<ul class="pagination justify-content-center">
-					<li class="page-item">
-						<a href="#" class="page-link">이전</a>
-					</li>
-					<li class="page-item">
-						<a href="#" class="page-link">다음</a>
-					</li>
-				</ul>
-			</div>
-			
+					
+			<!-- 어느게시판인가? 1:자바게시판, 2:JSP게시판, 3:spring게시판, 4:프로젝트게시판, 
+										board_info_idx=${board_info_idx}
+			-->
 			<div class="text-right">
 				<a href="${root}board/write?board_info_idx=${board_info_idx}" class="btn btn-primary">글쓰기</a>
 			</div>

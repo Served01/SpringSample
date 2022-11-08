@@ -53,24 +53,46 @@ create table content_table(
 
 drop table content_table;
 
+select * from content_table;
+
 commit
 
-select user_name
+select user_name 
 	from user_table
 	where user_id = 'hyun';
 	
 select * from USER_TABLE;
 
-insert into user_table values(1, '홍길동', 'hong1234', '12345678');
-insert into user_table values(2, '임성찬', 'lim12345', '12345678');
+insert into user_table values(1, '하소영', 'Hasoyoung', '12345678');
 insert into user_table values(2, '임성찬', 'lim12345', '12345678');
 
 delete from user_table;
 
-select * from user_table
-	where user_id ='Hasoyoung' and user_pw='12345678';
+--session area에 저장하기 위하여 테스트
+select * from USER_TABLE
+	where user_id='Hasoyoung' and user_pw = '12345678';
 	
-select * from CONTENT_TABLE;
+--modify : 로그인 정보 확인 
+select user_id, user_name 
+	from USER_TABLE
+	where user_idx = '2';--하소영
+	
+--content table: 글번호(content_idx), 제목(content_subject), 날짜(content_date)
+--user_table : 작성자(user_name)
+	
+--글번호  제목    작성자   날짜
 
-
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 

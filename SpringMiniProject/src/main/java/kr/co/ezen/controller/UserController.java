@@ -21,6 +21,7 @@ import kr.co.ezen.validator.UserValidator;
 @RequestMapping("/user")
 public class UserController {
 
+	@SuppressWarnings("unused")
 	@Autowired
 	private UserService userService;
 	@SuppressWarnings("unused")
@@ -41,8 +42,7 @@ public class UserController {
 			model.addAttribute("fail", fail);
 
 			//아직은 로그인하지 않았으므로 false로 설정
-			//loginUserDataBean.setUserlogin(false);
-			
+			//loginUserDataBean.setUserlogin(false);			
 			model.addAttribute("tempUserDataBean", tempUserDataBean);
 			return "user/login";			
 		}
@@ -103,9 +103,7 @@ public class UserController {
 		return "user/modify_success";
 	}
 	
-	
-	
-	
+		
 	@GetMapping("/logout")
 	public String logout() {
 		

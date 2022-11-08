@@ -5,14 +5,14 @@ import org.springframework.validation.Validator;
 
 import kr.co.ezen.beans.UserDataBean;
 
-public class UserValidator implements Validator {
-	
+
+public class UserValidator implements Validator{
+
 	@Override
-	public boolean supports(Class<?> clazz) {
-		
-		return UserDataBean.class.isAssignableFrom(clazz);
+	public boolean supports(Class<?> clazz) {		
+		return UserDataBean.class.isAssignableFrom(clazz); 
 	}
-	
+
 	@Override
 	public void validate(Object target, Errors errors) {
 		UserDataBean userDataBean = (UserDataBean) target;
@@ -20,20 +20,21 @@ public class UserValidator implements Validator {
 		String beanName = errors.getObjectName();
 		
 		//로그인시에 체크하므로 loginUserDataBean이므로 아래 내용을 실행하지 않고 통과합니다.
-		if(beanName.equals("joinUserDataBean")) {
+		if(beanName.equals("joinUserDataBean") || beanName.equals("modifyUserDataBean")) {
 			// 회원가입시에 패스워드 체크에 사용한 부분
 			if(userDataBean.getUser_pw().equals(userDataBean.getUser_pw2()) == false) {
 				errors.rejectValue("user_pw", "NotEquals"); 
 				errors.rejectValue("user_pw2", "NotEquals"); 
 			}
-			
-		if(userDataBean.isUserIdExist() == false) {
-			errors.rejectValue("user_id", "DontCheckUserIdExist");
-		}
-		}
-		
-	}
 
+		// 아이디 중복 확인 체크
+		if(beanName.equals("joinUserDataBean")) {
+			if(userDataBean.isUserIdExist() == false) {
+				errors.rejectValue("user_id", "DontCheckUserIdExist");
+			}
+		}
+	}
+	}
 	
 }
 
@@ -76,3 +77,4 @@ ValidatorCustermarizing
   - 입력값에 문제가 있다면 error 객체에 오류정보를 저장합니다. 
   - 사용할 오류 메시지는 “코드이름.bean객체이름.프로퍼티이름”으로 구성됩니다.
 */
+

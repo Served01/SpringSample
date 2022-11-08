@@ -1,5 +1,7 @@
 package kr.co.ezen.config;
 
+import javax.annotation.Resource;
+
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
@@ -22,10 +24,12 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import kr.co.ezen.beans.UserDataBean;
 import kr.co.ezen.interceptor.CheckLoginInterceptor;
+import kr.co.ezen.interceptor.CheckWriterInterceptor;
 import kr.co.ezen.interceptor.TopMenuInterceptor;
 import kr.co.ezen.mapper.BoardMapper;
 import kr.co.ezen.mapper.TopMenuMapper;
 import kr.co.ezen.mapper.UserMapper;
+import kr.co.ezen.service.BoardService;
 import kr.co.ezen.service.TopMenuService;
 
 @Configuration
@@ -55,6 +59,8 @@ public class ServletAppContext implements WebMvcConfigurer{
 	@Autowired
 	private UserDataBean loginUserDataBean;
 	
+	@Autowired
+	private BoardService boardService;
 	
 	// Controller.
 	@Override
@@ -128,10 +134,7 @@ public class ServletAppContext implements WebMvcConfigurer{
 			
 			return factoryBean;		
 		}
-	
-	
-	
-	
+		
 	// Secure Coding
 	// 모든 요청 주소는 무조건 인터셉터를 통과하도록 해야 합니다.(/**) 
 	
@@ -152,6 +155,12 @@ public class ServletAppContext implements WebMvcConfigurer{
 		registration2.addPathPatterns("/user/modify", "/user/logout", "/board/*");// 인터셉서 통과하도록 유도
 		registration2.excludePathPatterns("/board/main"); // 인터셉터 제외
 		
+		
+		//잘못된 경로 진입 차단
+		CheckWriterInterceptor checkWriterInterceptor = new CheckWriterInterceptor(loginUserDataBean,boardService);
+		InterceptorRegistration reg3 = registry.addInterceptor(checkWriterInterceptor);
+		reg3.addPathPatterns("/board/modify","/board/delete");	
+		
 	}
 	
 	// 두개의 서로다른 properties 설정이 충돌나지 않도록 합니다.
@@ -170,13 +179,14 @@ public class ServletAppContext implements WebMvcConfigurer{
 		return res; 
 	}	
 	
-	//스탠다드서블릿멀티파트리졸버 등록 (upload/download 용도)
+	// 스탠다드서블릿멀티파트리졸버 등록 (upload/download 용도)
 	@Bean
 	public StandardServletMultipartResolver multipartResolver() {
 		
 		return new StandardServletMultipartResolver();
-		
 	}
+	
+	
 }
 
 

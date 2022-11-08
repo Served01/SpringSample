@@ -9,7 +9,7 @@ public class UserDataBean {
 	private int user_idx; 
 	
 	@Size(min=2, max=30)
-	@Pattern(regexp = "[가-힣]*")
+	@Pattern(regexp = "[a-zA-Z가-힣]*")
 	private String user_name;
 	
 	@Size(min=8, max=15)
@@ -28,11 +28,11 @@ public class UserDataBean {
 	
 	private boolean userlogin;
 	
-	//생성자 주입 단, 한번만 실행
+	
+	//생성자 주입
 	public UserDataBean() {
 		this.userIdExist = false;
 		this.userlogin = false;
-		
 	}
 	
 	public int getUser_idx() {

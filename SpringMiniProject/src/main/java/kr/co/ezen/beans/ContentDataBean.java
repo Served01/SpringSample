@@ -24,6 +24,9 @@ public class ContentDataBean {
 	
 	private String content_writer_name; //글쓴사람 추가
 	
+	private int page;
+	
+	
 	public int getContent_idx() {
 		return content_idx;
 	}
@@ -78,6 +81,13 @@ public class ContentDataBean {
 	public void setContent_writer_name(String content_writer_name) {
 		this.content_writer_name = content_writer_name;
 	}
+	public int getPage() {
+		return page;
+	}
+	public void setPage(int page) {
+		this.page = page;
+	}
+	
 		
 	
 }

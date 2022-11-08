@@ -8,17 +8,15 @@ import kr.co.ezen.mapper.UserMapper;
 
 @Repository
 public class UserDAO {
-	
+
 	@Autowired
 	private UserMapper userMapper;
 	
-	public String checkUserIdExist(String user_id){
-				
+	public String checkUserIdExist(String user_id){				
 		return userMapper.checkUserIdExist(user_id);		
 	}
 	
-	public void addUserInfo(UserDataBean joinUserDataBean) {
-		
+	public void addUserInfo(UserDataBean joinUserDataBean) {		
 		userMapper.addUserInfo(joinUserDataBean); 
 	}
 	//로그인 정보
@@ -37,5 +35,11 @@ public class UserDAO {
 		userMapper.modifyUserInfo(modifyUserDataBean);
 		
 	}
+	
+	
+	
+	
+	
+	
 	
 }

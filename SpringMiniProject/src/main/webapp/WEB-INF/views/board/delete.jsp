@@ -11,7 +11,7 @@
 <body>
 	<script type="text/javascript">
 		alert("데이터가 삭제 되었습니다.")
-		location.href='${root}board/main'
+		location.href='${root}board/main?board_info_idx=${board_info_idx}'
 	</script>
 </body>
 </html>

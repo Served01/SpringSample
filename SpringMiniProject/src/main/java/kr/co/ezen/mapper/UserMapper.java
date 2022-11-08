@@ -9,8 +9,8 @@ import kr.co.ezen.beans.UserDataBean;
 public interface UserMapper {
 
 	@Select("select user_name from user_table where user_id = #{user_id}")
-	String checkUserIdExist(String user_id);
-
+		String checkUserIdExist(String user_id);
+	
 	@Insert("insert into user_table(user_idx, user_name, user_id, user_pw)"
 			+ "values(user_seq.nextval, #{user_name}, #{user_id}, #{user_pw})")
 		void addUserInfo(UserDataBean joinUserDataBean);
@@ -24,5 +24,6 @@ public interface UserMapper {
 			
 	@Update("update user_table set user_pw = #{user_pw} where user_idx = #{user_idx}")
 		void modifyUserInfo(UserDataBean modifyUserDataBean);
+		
 	
 }
